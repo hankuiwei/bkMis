@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+    <form-bean name="userForm" type="com.zc13.msmis.form.UserForm" />
+    <form-bean name="repairForm" type="com.zc13.bkmis.form.RepairForm" />
+    <form-bean name="SerClientMaintainForm" type="com.zc13.bkmis.form.SerClientMaintainForm" />
+    <form-bean name="SerClientComplaintForm" type="com.zc13.bkmis.form.SerClientComplaintForm" />
+    <form-bean name="materialsForm" dynamic="true" type="com.zc13.bkmis.form.SetMaterialsForm"></form-bean>
+    <form-bean name="compactRoomForm" dynamic="true" type="com.zc13.bkmis.form.CompactRoomForm"></form-bean>
+    <form-bean name="compactManagerForm" dynamic="true" type="com.zc13.bkmis.form.CompactManagerForm"></form-bean>
+  	<form-bean name="roomForm" type="com.zc13.bkmis.form.RoomForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  	
+  	<!-- 功能列维护 -->
+	<action path="/function" parameter = "method" scope="request"  type = "com.zc13.msmis.action.FunctionListAction">
+			<forward name="urlList" path="/zc13/msmis/functionList/urlList.jsp" />
+			<forward name="addUrl" path="/zc13/msmis/functionList/addUrl.jsp" />
+			<forward name="updateBefore" path="/zc13/msmis/functionList/updateUrl.jsp" />
+  	</action>
+	
+	<!-- 操作员管理 -->  
+    <action  path="/userManager" scope="request" name="userForm" type="com.zc13.msmis.action.UserManagerAction" parameter="method">
+       <forward name="user" path="/zc13/msmis/userManager/userManagerList.jsp"></forward>
+       <forward name="role" path="/zc13/msmis/userManager/user_Role.jsp"></forward>
+       <forward name="success" path="/zc13/msmis/userManager/addUser.jsp"></forward>
+       <forward name="add" path="/zc13/msmis/userManager/addUser.jsp"></forward>
+       <forward name="modify" path="/zc13/msmis/userManager/modifyUser.jsp"></forward>
+       <forward name="userManagerList" path="/zc13/msmis/userManager/userManageList2.jsp"></forward>
+       <forward name="addUserManager" path="/zc13/msmis/userManager/addUserManager.jsp"></forward>
+       <forward name="modifyUserManager" path="/zc13/msmis/userManager/modifyUserManager.jsp"></forward>
+       
+    </action>
+    
+    <!-- 个人信息维护 -->
+    <action path="/personManager" type="com.zc13.msmis.action.PersonManagerAction" parameter="method">
+    	<forward name="person" path="/zc13/msmis/personManager/person.jsp"></forward>
+    </action>
+    <!-- 入住迁出管理 -->
+    <action path="/customer" name="compactRoomForm" parameter="method" scope="request" type="com.zc13.bkmis.action.CustomerRoomAction">
+  	        <forward name="tree" path="/treeFram.jsp"  redirect="true"></forward>
+  	        <forward name="byLp" path="/zc13/bkmis/customerRoomManager/e_roomlist.jsp"></forward>
+  	        <forward name="list" path="/zc13/bkmis/customerManager/customerRoomList.jsp"></forward>
+  	        <forward name="addCost" path="/zc13/bkmis/customerManager/addCustomerCost.jsp"></forward>
+  			<forward name="gotoRelet" path="/zc13/bkmis/contractManager/addContract.jsp"></forward>
+  			<forward name="gotoChange" path="/zc13/bkmis/contractManager/addCompactChange.jsp"></forward>
+  	        <forward name="clientList" path="/zc13/bkmis/customerManager/customerManagerList.jsp"></forward>
+  	        <forward name="gotoEditClient" path="/zc13/bkmis/customerManager/editCustomer.jsp"></forward>
+  	        <forward name="gotolook" path="/zc13/bkmis/contractManager/gotoCompact.jsp"></forward>
+  	        <forward name="changeCompact" path="/zc13/bkmis/contractManager/editCompactInfo.jsp"></forward>
+  	        <forward name="changeCompact1" path="/zc13/bkmis/contractManager/editCompactChangeInfo.jsp"></forward>
+  	        <forward name="outRoom" path="/zc13/bkmis/customerManager/outRoom.jsp"></forward>
+  	        <forward name="returnOutRoom" path="/zc13/bkmis/customerManager/outRoomList.jsp"></forward>
+	  		<forward name="lookCompactCheck" path="/zc13/bkmis/contractManager/lookCompactCheck.jsp"></forward>
+	  	    <forward name="lookChangeCheck" path="/zc13/bkmis/contractManager/lookChangeCheck.jsp"></forward>
+	  	    <forward name="lookReletCheck" path="/zc13/bkmis/contractManager/lookReletCheck.jsp"></forward>
+	  	    <forward name="printCustomerList" path="/zc13/bkmis/customerManager/printCustomerList.jsp"></forward>
+	  	    <forward name="printCustomerComPactList" path="/zc13/bkmis/customerManager/printCustomerCompactList.jsp"></forward>
+	  	    <forward name="workTask" path="/zc13/bkmis/customerManager/workTask.jsp"></forward>
+	  	    <forward name="printTask" path="/zc13/bkmis/customerManager/printTask.jsp"></forward>
+	  	    <forward name="getClientsHistoryRoomsList" path="/zc13/bkmis/customerManager/clientsHistoryRoomsList.jsp"></forward>
+	  		<forward name="lookCompact" path="/zc13/bkmis/contractManager/lookCompact.jsp"></forward>
+	  	    <forward name="lookChange" path="/zc13/bkmis/contractManager/lookChange.jsp"></forward>
+	  	    <forward name="lookRelet" path="/zc13/bkmis/contractManager/lookRelet.jsp"></forward>
+  	</action>
+    
+    <!-- 系统参数维护 -->
+    <action path="/sysParamManager" scope="request" type="com.zc13.msmis.action.SysParamManagerAction" parameter="method">
+     <!-- 	<forward name="sysParamList" path="/zc13/msmis/sysParamManager/sysParamList.jsp"></forward> -->
+     	<forward name="tree" path="/treeFram.jsp"  redirect="true"></forward>
+    	<forward name="sysParamList" path="/treeFram4Edit.jsp"></forward>
+    	<forward name="toShowTree" path="/tree.jsp"></forward>
+    	<forward name="code" path="/zc13/msmis/sysParamManager/editCode.jsp"></forward>
+    	<forward name="codeType" path="/zc13/msmis/sysParamManager/editType.jsp"></forward>
+    </action>
+   
+    <!-- 报修项目管理 -->
+    <action path="/repair" name="repairForm" scope="request" type="com.zc13.bkmis.action.RepairAction" parameter="method">
+    	<forward name="list" path="/zc13/bkmis/clienceService/repairsList.jsp"></forward>
+    	<forward name="edit" path="/zc13/bkmis/clienceService/editRepairs.jsp"></forward>  	
+    </action>
+    
+    <!-- 得到房间列表 -->
+    <action path="/getRoom" name="roomForm" scope="request" type="com.zc13.bkmis.action.GetRoomAction" parameter="method">
+    	  <forward name="tree" path="/treeFram.jsp"  redirect="true"></forward>
+  	      <forward name="byLp" path="/zc13/bkmis/customerRoomManager/e_roomlist.jsp"></forward>
+    </action>
+   
+    <!-- 客户报修管理 -->
+    <action path="/client" name="SerClientMaintainForm"  scope="request" type="com.zc13.bkmis.action.SerClientMaintainAction" parameter="method">
+    	<!-- 客户报修列表页面 -->
+    	<forward name="list" path="/zc13/bkmis/clienceService/customerRepainrsList.jsp"></forward>
+    	<!-- 处理客户报修列表页面 -->
+    	<forward name="list2" path="/zc13/bkmis/clienceService/customerRepainrsList2.jsp"></forward>
+    	<forward name="edit" path="/zc13/bkmis/clienceService/editCusRepairs.jsp"></forward>
+    	<forward name="deal" path="/zc13/bkmis/clienceService/dealCusRepairs.jsp"></forward>
+    	<forward name="editWorkSituation" path="/zc13/bkmis/clienceService/editWorkSituation.jsp"></forward>
+    	<forward name="feedback" path="/zc13/bkmis/clienceService/feedbackCusRepairs.jsp"></forward>
+    	<forward name="goto" path="/zc13/bkmis/clienceService/addCusRepairs.jsp"></forward>
+    	<forward name="consume" path="/zc13/bkmis/clienceService/consumeList.jsp"></forward>
+    	<forward name="openDeal" path="/zc13/bkmis/clienceService/openDealCusRepairs.jsp"></forward>
+    	<forward name="printPGD" path="/zc13/bkmis/clienceService/pgdPrint.jsp"></forward>
+    </action>
+   
+    <!-- 客户投诉管理 -->
+    <action path="/complaint" name="SerClientComplaintForm" scope="request" type="com.zc13.bkmis.action.SerClientComplaintAction" parameter="method">
+    	<forward name="list" path="/zc13/bkmis/clienceService/customerComplaintsList.jsp"></forward>
+    	<forward name="add" path="/zc13/bkmis/clienceService/addComplaints.jsp"></forward>
+    	<forward name="edit" path="/zc13/bkmis/clienceService/editComplaints.jsp"></forward>
+    	<forward name="deal" path="/zc13/bkmis/clienceService/dealComplaints.jsp"></forward>
+    	<forward name="openDetail" path="/zc13/bkmis/clienceService/showComplaintsDetail.jsp"></forward>
+    </action>
+    
+    <!-- 日志管理 -->
+    <action path="/logManager" type="com.zc13.msmis.action.LogManageAction" parameter="method">
+    	<forward name="success" path="/zc13/msmis/logManager/logList.jsp"></forward>
+		<forward name="lookDetail" path="/zc13/msmis/logManager/logDetail.jsp"></forward>
+    </action>
+    
+    <!-- 获得材料列表 -->
+    <action path="/getMeterial" name="materialsForm" scope="request" type="com.zc13.bkmis.action.GetMeterialAction" parameter="method">
+    	<forward name="chooseMaterials" path="/treeFram.jsp" redirect="true"></forward>	
+		<forward name="mainFramJsp" path="/zc13/bkmis/clienceService/setMaterialsList.jsp"></forward>
+    </action>
+   
+    <!-- 招商租赁管理 -->
+    <action path="/compact" name="compactManagerForm" scope="request" type="com.zc13.bkmis.action.CompactManagerAction" parameter="method">
+  		<forward name="list" path="/zc13/bkmis/contractManager/contractManagerList.jsp"></forward>
+  		<forward name="contractList" path="/zc13/bkmis/contractManager/contractList.jsp"></forward>
+  		<forward name="getList" path="/zc13/bkmis/contractManager/getContractList.jsp"></forward>
+  		<forward name="quit" path="/zc13/bkmis/contractManager/getDelContractList.jsp"></forward>
+  		<forward name="change" path="/zc13/bkmis/contractManager/getChangeCompactList.jsp"></forward>
+  		<forward name="gotoQuit" path="/zc13/bkmis/contractManager/printGoApply.jsp"></forward>
+  		<forward name="changeList" path="/zc13/bkmis/contractManager/compactChangeList.jsp"></forward>
+  		<forward name="gotoEditQuit" path="/zc13/bkmis/contractManager/editDelContract.jsp"></forward>
+  		<forward name="quitList" path="/zc13/bkmis/contractManager/delContractList.jsp"></forward>
+  		<forward name="edit" path="/zc13/bkmis/contractManager/editDelContract.jsp"></forward>
+  		<forward name="pass0" path="/zc13/bkmis/compactIntention/compactIntentionPassList.jsp"></forward>
+  		<forward name="pass1" path="/zc13/bkmis/contractManager/compactPassList.jsp"></forward>
+  		<forward name="pass2" path="/zc13/bkmis/contractManager/compactRentPassList.jsp"></forward>
+  		<forward name="pass4" path="/zc13/bkmis/contractManager/compactChangePassList.jsp"></forward>
+  		<forward name="check0" path="/zc13/bkmis/compactIntention/compactIntentionCheckList.jsp"></forward>
+  		<forward name="check1" path="/zc13/bkmis/contractManager/compactCheckList.jsp"></forward>
+  		<forward name="check2" path="/zc13/bkmis/contractManager/compactRentCheckList.jsp"></forward>
+  		<forward name="check4" path="/zc13/bkmis/contractManager/compactChangeCheckList.jsp"></forward>
+  		<forward name="look" path="/zc13/bkmis/contractManager/lookQuit.jsp"></forward>
+  		<forward name="lookCompact" path="/zc13/bkmis/contractManager/lookCompact.jsp"></forward>
+  	    <forward name="lookChange" path="/zc13/bkmis/contractManager/lookChange.jsp"></forward>
+  	    <forward name="lookRelet" path="/zc13/bkmis/contractManager/lookRelet.jsp"></forward>
+  	    <forward name="toLookCompactCheck" path="/zc13/bkmis/contractManager/lookCompactCheck.jsp"></forward>
+  	    <forward name="toLookReletCheck" path="/zc13/bkmis/contractManager/lookReletCheck.jsp"></forward>
+  	    <forward name="toLookChangeCheck" path="/zc13/bkmis/contractManager/lookChangeCheck.jsp"></forward>
+   		<!-- 迁出申请单start -->
+   		<forward name="moveApplyList" path="/zc13/bkmis/contractManager/moveApplyList.jsp"></forward>
+   		<forward name="gotolookDetail" path="/zc13/bkmis/contractManager/moveApplyDetail.jsp"></forward>
+   		<forward name="printMoveApplyDetail" path="/zc13/bkmis/contractManager/printMoveApplyDetail.jsp"></forward>
+   		<forward name="quitDetail" path="/zc13/bkmis/contractManager/quitDetail.jsp"></forward>
+   		<forward name="allList" path="/zc13/bkmis/contractManager/getAllCompactList.jsp"></forward>
+   		<!-- 迁出申请单end -->
+    </action>
+    
+  </action-mappings>
+  
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

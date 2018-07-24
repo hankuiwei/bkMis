@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	
+	<!-- 设备管理 -->
+	<bean id="equipmentService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.EquipmentServiceImpl">
+				<property name="equipmentDAO" ref="equipmentDAO"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="equipmentDAO" class="com.zc13.bkmis.dao.impl.EquipmentDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	
+</beans>

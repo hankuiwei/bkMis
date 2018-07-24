@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  		<form-bean name="CItemsForm" type="com.zc13.bkmis.form.CItemsForm"></form-bean>
+  		<form-bean name="CAccounttemplateForm" type="com.zc13.bkmis.form.CAccounttemplateForm"></form-bean>
+  		<form-bean name="CCoststandardForm" type="com.zc13.bkmis.form.CCoststandardForm"></form-bean>
+  		<form-bean name="CChoiceForm" type="com.zc13.bkmis.form.CChoiceForm"></form-bean>
+  		<form-bean name="CBillForm" type="com.zc13.bkmis.form.CBillForm"></form-bean>
+  		<form-bean name="CNoticeForm" type="com.zc13.bkmis.form.CNoticeForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+	<action path="/items" name="CItemsForm" parameter = "method" scope="request" type = "com.zc13.bkmis.action.CItemsAction">
+  			<forward name="itemsList" path="/zc13/bkmis/costManage/baseSet/ChargingItems.jsp" />
+  	</action>
+	<action path="/account" name="CAccounttemplateForm" parameter = "method"  scope="request" type = "com.zc13.bkmis.action.CAccounttemplateAction">
+  			<forward name="list" path="/zc13/bkmis/costManage/baseSet/AccInformation.jsp" />
+  	</action>
+	<action path="/standard" name="CCoststandardForm" parameter = "method"  scope="request" type = "com.zc13.bkmis.action.CCoststandardAction">
+  			<forward name="list" path="/zc13/bkmis/costManage/baseSet/chargingStandard.jsp" />
+  			<forward name="person" path="/zc13/bkmis/costManage/person_pop.jsp" />
+  	</action>
+  	<action path="/choice" name="CChoiceForm" parameter="method" scope="request" type="com.zc13.bkmis.action.CChoiceAction">
+  		<forward name="list" path="/zc13/bkmis/costManage/c_choice.jsp" />
+  		<forward name="tree" path="/treeFram.jsp" />
+  		<forward name="person" path="/zc13/bkmis/costManage/person_pop.jsp" />
+  		<forward name="input" path="/zc13/bkmis/costManage/c_bill_input.jsp" />
+  		<forward name="input2" path="/zc13/bkmis/costManage/c_bill_input2.jsp" />
+  	</action>
+  	<action path="/bill" name="CBillForm" parameter="method" scope="request" type="com.zc13.bkmis.action.CBillAction">
+  		<forward name="account" path="/zc13/bkmis/costManage/c_accounts.jsp" />
+  		<forward name="accountPrint" path="/zc13/bkmis/costManage/c_accountPrint.jsp" />
+  		<forward name="tree" path="/treeFram.jsp" />
+  		<forward name="person" path="/zc13/bkmis/costManage/person_pop.jsp" />
+  		<forward name="collection" path="/zc13/bkmis/costManage/c_collection.jsp" />
+  		<forward name="refund" path="/zc13/bkmis/costManage/c_drawback.jsp" />
+  		<forward name="electricity" path="/zc13/bkmis/costManage/c_electricity.jsp" />
+  		<forward name="deposit" path="/zc13/bkmis/costManage/c_deposit.jsp" />
+  		<forward name="refundBill" path="/zc13/bkmis/costManage/c_refund.jsp" />
+  		<forward name="returnDeposit" path="/zc13/bkmis/costManage/return_deposit.jsp" />
+  		<forward name="nowCharge" path="/zc13/bkmis/costManage/c_charge.jsp" />
+  		<forward name="countBills" path="/zc13/bkmis/costManage/c_countBills.jsp" />
+  		<forward name="countCharge" path="/zc13/bkmis/costManage/c_countCharge.jsp" />
+  		<forward name="printCharge" path="/zc13/bkmis/costManage/c_count_print.jsp" />
+  		<forward name="chargeBill" path="/zc13/bkmis/costManage/c_detailBill4Charge.jsp" />
+  		<forward name="collectClient" path="/zc13/bkmis/costManage/c_collect_client.jsp" />
+  		<forward name="print" path="/zc13/bkmis/costManage/c_collect_print.jsp" />
+  		<forward name="client" path="/zc13/bkmis/costManage/c_client_pop.jsp" />
+  		<forward name="editbill" path="/bill.do?method=getBillList" redirect="true" />
+  		<forward name="printSj" path="/zc13/bkmis/costManage/sj_print.jsp" />
+  		<forward name="printSj2" path="/zc13/bkmis/costManage/sj_print2.jsp" />
+  		<forward name="rentInfo" path="/zc13/bkmis/costManage/rentInfo.jsp" />
+  	</action>
+  	<action path="/notice" name="CNoticeForm" parameter="method" scope="request" type="com.zc13.bkmis.action.CNoticeAction">
+  		<forward name="list" path="/zc13/bkmis/costManage/uncalledNotice.jsp" />
+  		<forward name="add" path="/zc13/bkmis/costManage/addNotice.jsp" />
+  		<forward name="detail" path="/zc13/bkmis/costManage/noticeDetail.jsp" />
+  		<forward name="print" path="/zc13/bkmis/costManage/notice_print.jsp" />
+  	</action>
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

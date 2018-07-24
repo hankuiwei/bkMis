@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/function.do" location="2355,1476" dimension="280,104" />
+  <StrutsActivity path="/userManager.do" location="1363,1124" dimension="293,104" />
+  <StrutsActivity path="/personManager.do" location="649,1778" dimension="306,104" />
+  <StrutsActivity path="/customer.do" location="14513,0" dimension="302,104" />
+  <StrutsActivity path="/sysParamManager.do" location="20484,0" dimension="322,104" />
+  <StrutsActivity path="/repair.do" location="3221,1476" dimension="249,104" />
+  <StrutsActivity path="/getRoom.do" location="19357,0" dimension="266,104" />
+  <StrutsActivity path="/client.do" location="1915,742" dimension="312,104" />
+  <StrutsActivity path="/complaint.do" location="833,1476" dimension="321,104" />
+  <StrutsActivity path="/logManager.do" location="157,1778" dimension="283,104" />
+  <StrutsActivity path="/getMeterial.do" location="19723,0" dimension="279,104" />
+  <StrutsActivity path="/compact.do" location="5751,0" dimension="316,104" />
+  <StrutsActivity path="/zc13/msmis/functionList/urlList.jsp" location="2041,1680" dimension="234,53" />
+  <StrutsActivity path="/zc13/msmis/functionList/addUrl.jsp" location="2375,1680" dimension="240,53" />
+  <StrutsActivity path="/zc13/msmis/functionList/updateUrl.jsp" location="2715,1680" dimension="258,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/userManageList2.jsp" location="0,1378" dimension="312,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/modifyUserManager.jsp" location="412,1378" dimension="333,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/modifyUser.jsp" location="845,1378" dimension="280,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/user_Role.jsp" location="1225,1378" dimension="269,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/addUser.jsp" location="1594,1378" dimension="263,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/addUserManager.jsp" location="1957,1378" dimension="316,53" />
+  <StrutsActivity path="/zc13/msmis/userManager/userManagerList.jsp" location="2373,1378" dimension="310,53" />
+  <StrutsActivity path="/zc13/msmis/personManager/person.jsp" location="667,1982" dimension="270,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/addCompactChange.jsp" location="16463,644" dimension="352,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookChange.jsp" location="11763,644" dimension="303,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/addCustomerCost.jsp" location="18682,644" dimension="345,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/printTask.jsp" location="17875,644" dimension="294,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookCompactCheck.jsp" location="10491,644" dimension="346,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookReletCheck.jsp" location="9657,644" dimension="323,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/customerRoomList.jsp" location="15120,644" dimension="348,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/outRoomList.jsp" location="18269,644" dimension="313,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/clientsHistoryRoomsList.jsp" location="15568,644" dimension="377,53" />
+  <StrutsActivity path="/zc13/bkmis/customerRoomManager/e_roomlist.jsp" location="19127,644" dimension="335,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/editCustomer.jsp" location="16045,644" dimension="318,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/printCustomerCompactList.jsp" location="16915,644" dimension="394,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/outRoom.jsp" location="14726,644" dimension="294,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/addContract.jsp" location="13483,644" dimension="305,53" />
+  <StrutsActivity path="/treeFram.jsp" location="19620,644" dimension="109,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/printCustomerList.jsp" location="14284,644" dimension="342,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/editCompactInfo.jsp" location="12579,644" dimension="330,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookCompact.jsp" location="10080,644" dimension="311,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/customerManagerList.jsp" location="17409,644" dimension="366,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookRelet.jsp" location="10937,644" dimension="288,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/editCompactChangeInfo.jsp" location="13009,644" dimension="374,53" />
+  <StrutsActivity path="/zc13/bkmis/customerManager/workTask.jsp" location="13888,644" dimension="296,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookChangeCheck.jsp" location="11325,644" dimension="338,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/gotoCompact.jsp" location="12166,644" dimension="313,53" />
+  <StrutsActivity path="/treeFram4Edit.jsp" location="20260,644" dimension="138,53" />
+  <StrutsActivity path="/tree.jsp" location="20891,644" dimension="80,53" />
+  <StrutsActivity path="/zc13/msmis/sysParamManager/editType.jsp" location="20498,644" dimension="293,53" />
+  <StrutsActivity path="/zc13/msmis/sysParamManager/editCode.jsp" location="21071,644" dimension="296,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/editRepairs.jsp" location="3018,1680" dimension="279,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/repairsList.jsp" location="3397,1680" dimension="273,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/feedbackCusRepairs.jsp" location="0,1026" dimension="332,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/editWorkSituation.jsp" location="432,1026" dimension="317,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/customerRepainrsList2.jsp" location="849,1026" dimension="344,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/dealCusRepairs.jsp" location="1293,1026" dimension="303,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/openDealCusRepairs.jsp" location="1696,1026" dimension="334,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/editCusRepairs.jsp" location="2130,1026" dimension="300,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/pgdPrint.jsp" location="2530,1026" dimension="263,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/addCusRepairs.jsp" location="2893,1026" dimension="301,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/customerRepainrsList.jsp" location="3294,1026" dimension="337,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/consumeList.jsp" location="3731,1026" dimension="284,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/showComplaintsDetail.jsp" location="0,1680" dimension="341,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/dealComplaints.jsp" location="441,1680" dimension="303,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/editComplaints.jsp" location="844,1680" dimension="300,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/customerComplaintsList.jsp" location="1244,1680" dimension="351,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/addComplaints.jsp" location="1695,1680" dimension="301,53" />
+  <StrutsActivity path="/zc13/msmis/logManager/logList.jsp" location="0,1982" dimension="245,53" />
+  <StrutsActivity path="/zc13/msmis/logManager/logDetail.jsp" location="345,1982" dimension="259,53" />
+  <StrutsActivity path="/zc13/bkmis/clienceService/setMaterialsList.jsp" location="19857,644" dimension="303,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/moveApplyDetail.jsp" location="5302,644" dimension="331,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/moveApplyList.jsp" location="8801,644" dimension="317,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/getChangeCompactList.jsp" location="2211,644" dimension="367,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactChangeCheckList.jsp" location="8320,644" dimension="381,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/printGoApply.jsp" location="7464,644" dimension="310,53" />
+  <StrutsActivity path="/zc13/bkmis/compactIntention/compactIntentionCheckList.jsp" location="1722,644" dimension="389,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/getDelContractList.jsp" location="9218,644" dimension="339,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactCheckList.jsp" location="4865,644" dimension="337,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactRentCheckList.jsp" location="7001,644" dimension="363,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/printMoveApplyDetail.jsp" location="4023,644" dimension="359,53" />
+  <StrutsActivity path="/zc13/bkmis/compactIntention/compactIntentionPassList.jsp" location="0,644" dimension="380,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/contractList.jsp" location="480,644" dimension="299,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/delContractList.jsp" location="3604,644" dimension="319,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactChangeList.jsp" location="7874,644" dimension="346,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/lookQuit.jsp" location="4482,644" dimension="283,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/quitDetail.jsp" location="6185,644" dimension="288,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/editDelContract.jsp" location="879,644" dimension="323,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactRentPassList.jsp" location="3150,644" dimension="354,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactPassList.jsp" location="6573,644" dimension="328,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/contractManagerList.jsp" location="5733,644" dimension="352,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/compactChangePassList.jsp" location="2678,644" dimension="372,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/getContractList.jsp" location="1302,644" dimension="320,53" />
+  <StrutsActivity path="/zc13/bkmis/contractManager/getAllCompactList.jsp" />
+  <StrutsTransition id="/complaint.do,deal,/zc13/bkmis/clienceService/dealComplaints.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="929,1580" />
+      <AbsolutePoint location="929,1645" />
+      <AbsolutePoint location="592,1645" />
+      <AbsolutePoint location="592,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logManager.do,lookDetail,/zc13/msmis/logManager/logDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="369,1882" />
+      <AbsolutePoint location="369,1932" />
+      <AbsolutePoint location="474,1932" />
+      <AbsolutePoint location="474,1982" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,allList,/zc13/bkmis/contractManager/quitDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6067,52" />
+      <AbsolutePoint location="6329,52" />
+      <AbsolutePoint location="6329,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,gotoEditQuit,/zc13/bkmis/contractManager/editDelContract.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5778,104" />
+      <AbsolutePoint location="5778,194" />
+      <AbsolutePoint location="959,194" />
+      <AbsolutePoint location="959,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,gotoRelet,/zc13/bkmis/contractManager/addContract.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14632,104" />
+      <AbsolutePoint location="14632,554" />
+      <AbsolutePoint location="13635,554" />
+      <AbsolutePoint location="13635,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/complaint.do,openDetail,/zc13/bkmis/clienceService/showComplaintsDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="865,1580" />
+      <AbsolutePoint location="865,1615" />
+      <AbsolutePoint location="170,1615" />
+      <AbsolutePoint location="170,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,lookChange,/zc13/bkmis/contractManager/lookChange.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14582,104" />
+      <AbsolutePoint location="14582,434" />
+      <AbsolutePoint location="11990,434" />
+      <AbsolutePoint location="11990,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,check2,/zc13/bkmis/contractManager/compactRentCheckList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5941,104" />
+      <AbsolutePoint location="5941,464" />
+      <AbsolutePoint location="7182,464" />
+      <AbsolutePoint location="7182,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,goto,/zc13/bkmis/clienceService/addCusRepairs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2149,846" />
+      <AbsolutePoint location="2149,936" />
+      <AbsolutePoint location="3043,936" />
+      <AbsolutePoint location="3043,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,edit,/zc13/bkmis/clienceService/editCusRepairs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2087,846" />
+      <AbsolutePoint location="2087,996" />
+      <AbsolutePoint location="2280,996" />
+      <AbsolutePoint location="2280,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,quitList,/zc13/bkmis/contractManager/delContractList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5854,104" />
+      <AbsolutePoint location="5854,404" />
+      <AbsolutePoint location="3763,404" />
+      <AbsolutePoint location="3763,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,printPGD,/zc13/bkmis/clienceService/pgdPrint.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2118,846" />
+      <AbsolutePoint location="2118,966" />
+      <AbsolutePoint location="2661,966" />
+      <AbsolutePoint location="2661,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getRoom.do,tree,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="19557,104" />
+      <AbsolutePoint location="19557,134" />
+      <AbsolutePoint location="19661,134" />
+      <AbsolutePoint location="19661,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getMeterial.do,chooseMaterials,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="19793,104" />
+      <AbsolutePoint location="19793,134" />
+      <AbsolutePoint location="19688,134" />
+      <AbsolutePoint location="19688,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,addCost,/zc13/bkmis/customerManager/addCustomerCost.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14783,104" />
+      <AbsolutePoint location="14783,224" />
+      <AbsolutePoint location="18854,224" />
+      <AbsolutePoint location="18854,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,gotolookDetail,/zc13/bkmis/contractManager/moveApplyDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5898,104" />
+      <AbsolutePoint location="5898,524" />
+      <AbsolutePoint location="5467,524" />
+      <AbsolutePoint location="5467,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,list,/zc13/bkmis/clienceService/customerRepainrsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2180,846" />
+      <AbsolutePoint location="2180,906" />
+      <AbsolutePoint location="3462,906" />
+      <AbsolutePoint location="3462,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,gotoEditClient,/zc13/bkmis/customerManager/editCustomer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14708,104" />
+      <AbsolutePoint location="14708,404" />
+      <AbsolutePoint location="16204,404" />
+      <AbsolutePoint location="16204,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,moveApplyList,/zc13/bkmis/contractManager/moveApplyList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5985,104" />
+      <AbsolutePoint location="5985,344" />
+      <AbsolutePoint location="8959,344" />
+      <AbsolutePoint location="8959,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,modify,/zc13/msmis/userManager/modifyUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1454,1228" />
+      <AbsolutePoint location="1454,1318" />
+      <AbsolutePoint location="985,1318" />
+      <AbsolutePoint location="985,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,changeList,/zc13/bkmis/contractManager/compactChangeList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5963,104" />
+      <AbsolutePoint location="5963,404" />
+      <AbsolutePoint location="8047,404" />
+      <AbsolutePoint location="8047,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,clientList,/zc13/bkmis/customerManager/customerManagerList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14745,104" />
+      <AbsolutePoint location="14745,314" />
+      <AbsolutePoint location="17592,314" />
+      <AbsolutePoint location="17592,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,getList,/zc13/bkmis/contractManager/getContractList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5800,104" />
+      <AbsolutePoint location="5800,254" />
+      <AbsolutePoint location="1462,254" />
+      <AbsolutePoint location="1462,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/repair.do,list,/zc13/bkmis/clienceService/repairsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3407,1580" />
+      <AbsolutePoint location="3407,1630" />
+      <AbsolutePoint location="3533,1630" />
+      <AbsolutePoint location="3533,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,openDeal,/zc13/bkmis/clienceService/openDealCusRepairs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2055,846" />
+      <AbsolutePoint location="2055,996" />
+      <AbsolutePoint location="1863,996" />
+      <AbsolutePoint location="1863,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/complaint.do,list,/zc13/bkmis/clienceService/customerComplaintsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1058,1580" />
+      <AbsolutePoint location="1058,1645" />
+      <AbsolutePoint location="1419,1645" />
+      <AbsolutePoint location="1419,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,gotoChange,/zc13/bkmis/contractManager/addCompactChange.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14720,104" />
+      <AbsolutePoint location="14720,374" />
+      <AbsolutePoint location="16639,374" />
+      <AbsolutePoint location="16639,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,lookCompact,/zc13/bkmis/contractManager/lookCompact.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14531,104" />
+      <AbsolutePoint location="14531,314" />
+      <AbsolutePoint location="10313,314" />
+      <AbsolutePoint location="10313,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,edit,/zc13/bkmis/contractManager/editDelContract.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5789,104" />
+      <AbsolutePoint location="5789,224" />
+      <AbsolutePoint location="1121,224" />
+      <AbsolutePoint location="1121,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/complaint.do,edit,/zc13/bkmis/clienceService/editComplaints.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="994,1580" />
+      <AbsolutePoint location="994,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,check0,/zc13/bkmis/compactIntention/compactIntentionCheckList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5810,104" />
+      <AbsolutePoint location="5810,284" />
+      <AbsolutePoint location="1916,284" />
+      <AbsolutePoint location="1916,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getMeterial.do,mainFramJsp,/zc13/bkmis/clienceService/setMaterialsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="19932,104" />
+      <AbsolutePoint location="19932,134" />
+      <AbsolutePoint location="20009,134" />
+      <AbsolutePoint location="20009,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,tree,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14808,104" />
+      <AbsolutePoint location="14808,164" />
+      <AbsolutePoint location="19634,164" />
+      <AbsolutePoint location="19634,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,pass1,/zc13/bkmis/contractManager/compactPassList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5930,104" />
+      <AbsolutePoint location="5930,494" />
+      <AbsolutePoint location="6737,494" />
+      <AbsolutePoint location="6737,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,lookChangeCheck,/zc13/bkmis/contractManager/lookChangeCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14569,104" />
+      <AbsolutePoint location="14569,404" />
+      <AbsolutePoint location="11578,404" />
+      <AbsolutePoint location="11578,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,add,/zc13/msmis/userManager/addUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1527,1228" />
+      <AbsolutePoint location="1527,1348" />
+      <AbsolutePoint location="1659,1348" />
+      <AbsolutePoint location="1659,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,success,/zc13/msmis/userManager/addUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1564,1228" />
+      <AbsolutePoint location="1564,1318" />
+      <AbsolutePoint location="1791,1318" />
+      <AbsolutePoint location="1791,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,deal,/zc13/bkmis/clienceService/dealCusRepairs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2024,846" />
+      <AbsolutePoint location="2024,966" />
+      <AbsolutePoint location="1444,966" />
+      <AbsolutePoint location="1444,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,outRoom,/zc13/bkmis/customerManager/outRoom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14670,104" />
+      <AbsolutePoint location="14670,494" />
+      <AbsolutePoint location="14873,494" />
+      <AbsolutePoint location="14873,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,printMoveApplyDetail,/zc13/bkmis/contractManager/printMoveApplyDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5865,104" />
+      <AbsolutePoint location="5865,434" />
+      <AbsolutePoint location="4202,434" />
+      <AbsolutePoint location="4202,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,look,/zc13/bkmis/contractManager/lookQuit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5876,104" />
+      <AbsolutePoint location="5876,464" />
+      <AbsolutePoint location="4623,464" />
+      <AbsolutePoint location="4623,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysParamManager.do,sysParamList,/treeFram4Edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="20580,104" />
+      <AbsolutePoint location="20580,194" />
+      <AbsolutePoint location="20329,194" />
+      <AbsolutePoint location="20329,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,userManagerList,/zc13/msmis/userManager/userManageList2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1381,1228" />
+      <AbsolutePoint location="1381,1258" />
+      <AbsolutePoint location="156,1258" />
+      <AbsolutePoint location="156,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,quitDetail,/zc13/bkmis/contractManager/quitDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5919,104" />
+      <AbsolutePoint location="5919,524" />
+      <AbsolutePoint location="6299,524" />
+      <AbsolutePoint location="6299,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/complaint.do,add,/zc13/bkmis/clienceService/addComplaints.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1122,1580" />
+      <AbsolutePoint location="1122,1615" />
+      <AbsolutePoint location="1845,1615" />
+      <AbsolutePoint location="1845,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,modifyUserManager,/zc13/msmis/userManager/modifyUserManager.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1418,1228" />
+      <AbsolutePoint location="1418,1288" />
+      <AbsolutePoint location="578,1288" />
+      <AbsolutePoint location="578,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,editWorkSituation,/zc13/bkmis/clienceService/editWorkSituation.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1962,846" />
+      <AbsolutePoint location="1962,906" />
+      <AbsolutePoint location="590,906" />
+      <AbsolutePoint location="590,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getRoom.do,byLp,/zc13/bkmis/customerRoomManager/e_roomlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="19424,104" />
+      <AbsolutePoint location="19424,194" />
+      <AbsolutePoint location="19378,194" />
+      <AbsolutePoint location="19378,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/repair.do,edit,/zc13/bkmis/clienceService/editRepairs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3283,1580" />
+      <AbsolutePoint location="3283,1630" />
+      <AbsolutePoint location="3157,1630" />
+      <AbsolutePoint location="3157,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,byLp,/zc13/bkmis/customerRoomManager/e_roomlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14796,104" />
+      <AbsolutePoint location="14796,194" />
+      <AbsolutePoint location="19210,194" />
+      <AbsolutePoint location="19210,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personManager.do,person,/zc13/msmis/personManager/person.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="802,1882" />
+      <AbsolutePoint location="802,1982" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,check1,/zc13/bkmis/contractManager/compactCheckList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5887,104" />
+      <AbsolutePoint location="5887,494" />
+      <AbsolutePoint location="5033,494" />
+      <AbsolutePoint location="5033,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,addUserManager,/zc13/msmis/userManager/addUserManager.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1601,1228" />
+      <AbsolutePoint location="1601,1288" />
+      <AbsolutePoint location="2115,1288" />
+      <AbsolutePoint location="2115,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,lookReletCheck,/zc13/bkmis/contractManager/lookReletCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14519,104" />
+      <AbsolutePoint location="14519,284" />
+      <AbsolutePoint location="9899,284" />
+      <AbsolutePoint location="9899,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,consume,/zc13/bkmis/clienceService/consumeList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2211,846" />
+      <AbsolutePoint location="2211,876" />
+      <AbsolutePoint location="3873,876" />
+      <AbsolutePoint location="3873,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,lookChange,/zc13/bkmis/contractManager/lookChange.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6061,104" />
+      <AbsolutePoint location="6061,134" />
+      <AbsolutePoint location="11838,134" />
+      <AbsolutePoint location="11838,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysParamManager.do,codeType,/zc13/msmis/sysParamManager/editType.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="20645,104" />
+      <AbsolutePoint location="20645,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,lookCompact,/zc13/bkmis/contractManager/lookCompact.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6017,104" />
+      <AbsolutePoint location="6017,254" />
+      <AbsolutePoint location="10157,254" />
+      <AbsolutePoint location="10157,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,printCustomerList,/zc13/bkmis/customerManager/printCustomerList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14657,104" />
+      <AbsolutePoint location="14657,614" />
+      <AbsolutePoint location="14455,614" />
+      <AbsolutePoint location="14455,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,gotolook,/zc13/bkmis/contractManager/gotoCompact.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14594,104" />
+      <AbsolutePoint location="14594,464" />
+      <AbsolutePoint location="12322,464" />
+      <AbsolutePoint location="12322,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,list2,/zc13/bkmis/clienceService/customerRepainrsList2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1993,846" />
+      <AbsolutePoint location="1993,936" />
+      <AbsolutePoint location="1021,936" />
+      <AbsolutePoint location="1021,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,toLookChangeCheck,/zc13/bkmis/contractManager/lookChangeCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6050,104" />
+      <AbsolutePoint location="6050,164" />
+      <AbsolutePoint location="11409,164" />
+      <AbsolutePoint location="11409,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,role,/zc13/msmis/userManager/user_Role.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1491,1228" />
+      <AbsolutePoint location="1491,1348" />
+      <AbsolutePoint location="1359,1348" />
+      <AbsolutePoint location="1359,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,pass0,/zc13/bkmis/compactIntention/compactIntentionPassList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5756,104" />
+      <AbsolutePoint location="5756,134" />
+      <AbsolutePoint location="190,134" />
+      <AbsolutePoint location="190,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,printTask,/zc13/bkmis/customerManager/printTask.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14758,104" />
+      <AbsolutePoint location="14758,284" />
+      <AbsolutePoint location="18022,284" />
+      <AbsolutePoint location="18022,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/function.do,updateBefore,/zc13/msmis/functionList/updateUrl.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2588,1580" />
+      <AbsolutePoint location="2588,1630" />
+      <AbsolutePoint location="2844,1630" />
+      <AbsolutePoint location="2844,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysParamManager.do,tree,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="20516,104" />
+      <AbsolutePoint location="20516,164" />
+      <AbsolutePoint location="19716,164" />
+      <AbsolutePoint location="19716,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,changeCompact1,/zc13/bkmis/contractManager/editCompactChangeInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14619,104" />
+      <AbsolutePoint location="14619,524" />
+      <AbsolutePoint location="13196,524" />
+      <AbsolutePoint location="13196,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,quit,/zc13/bkmis/contractManager/getDelContractList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5996,104" />
+      <AbsolutePoint location="5996,314" />
+      <AbsolutePoint location="9387,314" />
+      <AbsolutePoint location="9387,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,change,/zc13/bkmis/contractManager/getChangeCompactList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5821,104" />
+      <AbsolutePoint location="5821,314" />
+      <AbsolutePoint location="2394,314" />
+      <AbsolutePoint location="2394,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,gotoQuit,/zc13/bkmis/contractManager/printGoApply.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5952,104" />
+      <AbsolutePoint location="5952,434" />
+      <AbsolutePoint location="7619,434" />
+      <AbsolutePoint location="7619,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManager.do,user,/zc13/msmis/userManager/userManagerList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1637,1228" />
+      <AbsolutePoint location="1637,1258" />
+      <AbsolutePoint location="2528,1258" />
+      <AbsolutePoint location="2528,1378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logManager.do,success,/zc13/msmis/logManager/logList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="227,1882" />
+      <AbsolutePoint location="227,1932" />
+      <AbsolutePoint location="122,1932" />
+      <AbsolutePoint location="122,1982" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,lookCompactCheck,/zc13/bkmis/contractManager/lookCompactCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14544,104" />
+      <AbsolutePoint location="14544,344" />
+      <AbsolutePoint location="10750,344" />
+      <AbsolutePoint location="10750,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,printCustomerComPactList,/zc13/bkmis/customerManager/printCustomerCompactList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14733,104" />
+      <AbsolutePoint location="14733,344" />
+      <AbsolutePoint location="17112,344" />
+      <AbsolutePoint location="17112,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysParamManager.do,toShowTree,/tree.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="20709,104" />
+      <AbsolutePoint location="20709,164" />
+      <AbsolutePoint location="20931,164" />
+      <AbsolutePoint location="20931,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,returnOutRoom,/zc13/bkmis/customerManager/outRoomList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14770,104" />
+      <AbsolutePoint location="14770,254" />
+      <AbsolutePoint location="18425,254" />
+      <AbsolutePoint location="18425,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysParamManager.do,code,/zc13/msmis/sysParamManager/editCode.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="20774,104" />
+      <AbsolutePoint location="20774,134" />
+      <AbsolutePoint location="21219,134" />
+      <AbsolutePoint location="21219,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,getClientsHistoryRoomsList,/zc13/bkmis/customerManager/clientsHistoryRoomsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14695,104" />
+      <AbsolutePoint location="14695,434" />
+      <AbsolutePoint location="15756,434" />
+      <AbsolutePoint location="15756,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,allList,/zc13/bkmis/contractManager/getAllCompactList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5909,52" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,toLookCompactCheck,/zc13/bkmis/contractManager/lookCompactCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6028,104" />
+      <AbsolutePoint location="6028,224" />
+      <AbsolutePoint location="10577,224" />
+      <AbsolutePoint location="10577,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,list,/zc13/bkmis/contractManager/contractManagerList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5909,104" />
+      <AbsolutePoint location="5909,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,workTask,/zc13/bkmis/customerManager/workTask.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14645,104" />
+      <AbsolutePoint location="14645,584" />
+      <AbsolutePoint location="14036,584" />
+      <AbsolutePoint location="14036,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,toLookReletCheck,/zc13/bkmis/contractManager/lookReletCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6007,104" />
+      <AbsolutePoint location="6007,284" />
+      <AbsolutePoint location="9737,284" />
+      <AbsolutePoint location="9737,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,pass4,/zc13/bkmis/contractManager/compactChangePassList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5832,104" />
+      <AbsolutePoint location="5832,344" />
+      <AbsolutePoint location="2864,344" />
+      <AbsolutePoint location="2864,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,changeCompact,/zc13/bkmis/contractManager/editCompactInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14607,104" />
+      <AbsolutePoint location="14607,494" />
+      <AbsolutePoint location="12744,494" />
+      <AbsolutePoint location="12744,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,lookRelet,/zc13/bkmis/contractManager/lookRelet.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14557,104" />
+      <AbsolutePoint location="14557,374" />
+      <AbsolutePoint location="11153,374" />
+      <AbsolutePoint location="11153,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/function.do,urlList,/zc13/msmis/functionList/urlList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2401,1580" />
+      <AbsolutePoint location="2401,1630" />
+      <AbsolutePoint location="2158,1630" />
+      <AbsolutePoint location="2158,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/function.do,addUrl,/zc13/msmis/functionList/addUrl.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2495,1580" />
+      <AbsolutePoint location="2495,1680" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,pass2,/zc13/bkmis/contractManager/compactRentPassList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5843,104" />
+      <AbsolutePoint location="5843,374" />
+      <AbsolutePoint location="3327,374" />
+      <AbsolutePoint location="3327,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,check4,/zc13/bkmis/contractManager/compactChangeCheckList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5974,104" />
+      <AbsolutePoint location="5974,374" />
+      <AbsolutePoint location="8510,374" />
+      <AbsolutePoint location="8510,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customer.do,list,/zc13/bkmis/customerManager/customerRoomList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14682,104" />
+      <AbsolutePoint location="14682,464" />
+      <AbsolutePoint location="15294,464" />
+      <AbsolutePoint location="15294,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/client.do,feedback,/zc13/bkmis/clienceService/feedbackCusRepairs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1931,846" />
+      <AbsolutePoint location="1931,876" />
+      <AbsolutePoint location="166,876" />
+      <AbsolutePoint location="166,1026" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,lookRelet,/zc13/bkmis/contractManager/lookRelet.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6039,104" />
+      <AbsolutePoint location="6039,194" />
+      <AbsolutePoint location="11009,194" />
+      <AbsolutePoint location="11009,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/compact.do,contractList,/zc13/bkmis/contractManager/contractList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5767,104" />
+      <AbsolutePoint location="5767,164" />
+      <AbsolutePoint location="629,164" />
+      <AbsolutePoint location="629,644" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

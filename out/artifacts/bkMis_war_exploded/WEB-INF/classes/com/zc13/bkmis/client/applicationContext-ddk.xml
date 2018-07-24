@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 用户登录 -->
+	<bean id="adminLoginService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.AdminLoginServiceImpl">
+			    <property name="adminLoginDAOImpl"><ref bean="adminLoginDAO"/></property>
+			    <!-- houxj加 -->
+			    <property name="iroomManageDao"><ref bean="iroomManageDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="adminLoginDAO" class="com.zc13.msmis.dao.impl.AdminLoginDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	
+	<!-- 预入驻管理 -->
+	<bean id="destineService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.DestineServiceImpl">
+			    <property name="destineDAOImpl"><ref bean="destineDAO"/></property>
+			    <property name="ICompactManagerDAO"><ref bean="ICompactManagerDAO"/></property>
+			    <property name="ICustomerRoomDAO"><ref bean="ICustomerRoomDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="destineDAO" class="com.zc13.bkmis.dao.impl.DestineDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	<!-- 工作任务单 -->
+	<bean id="workTaskService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.WorkTaskServiceImpl">
+			    <property name="workTaskDAOImpl"><ref bean="workTaskDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="workTaskDAO" class="com.zc13.bkmis.dao.impl.WorkTaskDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	
+	<!-- 车辆限行 -->
+	<bean id="limitCarService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.LimitCarServiceImpl">
+			      <property name="workTaskDAOImpl"><ref bean="workTaskDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<!-- 业务流程图 -->
+	<bean id="processService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.ProcessServiceImpl">
+			    <property name="adminLoginDAOImpl"><ref bean="adminLoginDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+</beans>

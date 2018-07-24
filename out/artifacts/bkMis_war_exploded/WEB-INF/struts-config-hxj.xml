@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  		<form-bean name="roleForm" type="com.zc13.msmis.form.RoleForm"></form-bean>
+  		<form-bean name="lpForm" type="com.zc13.bkmis.form.LpForm"></form-bean>
+  		<form-bean name="buildForm" type="com.zc13.bkmis.form.BuildForm"></form-bean>
+  		<form-bean name="roomForm" type="com.zc13.bkmis.form.RoomForm"></form-bean>
+  		<!-- 新加房间设备的用到的form -->
+  		<form-bean name="materialsForm" dynamic="true" type="com.zc13.bkmis.form.SetMaterialsForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  <!-- role的相关配置 -->
+	<action path="/role" name="roleForm" parameter="method" scope="request" type="com.zc13.msmis.action.RoleManageAction">
+  			<forward name="success"   path="/zc13/msmis/roleManage/roleListPage.jsp"/>
+  			<forward name="add" path="/zc13/msmis/roleManage/addRole.jsp"></forward>
+  			<forward name="modify" path="/zc13/msmis/roleManage/modifyRole.jsp" />
+  			<forward name="permissions" path="/zc13/msmis/roleManage/rolePrem.jsp"></forward>
+  			<forward name="roleuserperm" path="/zc13/msmis/roleManage/roleuserperm.jsp"></forward>
+  			<forward name="tip" path="/zc13/msmis/roleManage/setTips.jsp"></forward>
+  	</action>
+  	<!-- 楼盘的相关配置 -->
+  	<action path="/lp" name="lpForm" parameter="method" scope="request" type="com.zc13.bkmis.action.LpManageAction">
+  	        <forward name="lpList" path="/zc13/bkmis/lpManage/e_lplist.jsp"></forward>
+  	        <forward name="lpinfo" path="/zc13/bkmis/lpManage/e_lplist.jsp"></forward>
+  	        <forward name="modify" path="/zc13/bkmis/lpManage/modifyLp.jsp"></forward>
+  	        <forward name="add" path="/zc13/bkmis/lpManage/addLp.jsp"></forward>
+  	        <forward name="upload" path="/zc13/bkmis/lpManage/modifyLp.jsp"></forward>
+  	        <forward name="bj" path="/zc13/bkmis/lpManage/addBj.jsp"></forward>
+  	        <!-- 下面这两个查看和编辑的链接是针对普通的楼盘管理员使用的。而上面的那些都是给根用户的功能 -->
+  	        <forward name="looklp" path="/zc13/bkmis/lpManage/lookLp.jsp"></forward>
+  	        <forward name="editlp" path="/zc13/bkmis/lpManage/editLp.jsp"></forward>
+  	</action>
+  	<!-- 楼栋的相关配置 -->
+  	<action path="/build" name="buildForm" parameter="method"  scope="request" type="com.zc13.bkmis.action.BuildsManageAction">
+  	       <forward name="buildsList" path="/zc13/bkmis/buildsManage/e_buildslist.jsp"></forward>
+  	       <forward name="buildsBylLpname" path="/zc13/bkmis/buildsManage/e_buildslist.jsp"></forward>
+  	       <forward name="add" path="/zc13/bkmis/buildsManage/addBuilds.jsp"></forward>
+  	       <forward name="modify" path="/zc13/bkmis/buildsManage/modifyBuilds.jsp"></forward>
+  	       <forward name="floorPlan" path="/zc13/bkmis/buildsManage/floorPlan.jsp"></forward>
+  	       <forward name="bj" path="/zc13/bkmis/buildsManage/addBj.jsp"></forward>
+  	       <forward name="roomplan" path="/zc13/bkmis/buildsManage/getRoomClientInfo.jsp"></forward>
+  	</action>
+  	<!-- room的相关注入 -->
+  	<action path="/room" name="roomForm" parameter="method" scope="request" type="com.zc13.bkmis.action.RoomManageAction">
+  	        <forward name="tree" path="/treeFram.jsp"  redirect="true"></forward>
+  	        <forward name="bylp" path="/zc13/bkmis/roomManage/e_roomlist.jsp"></forward>
+  	        <forward name="aroomList" path="/zc13/bkmis/roomManage/e_roomlist.jsp"></forward>
+  	        <forward name="roomList" path="/zc13/bkmis/roomManage/roomManagelist.jsp"></forward>
+  	        <forward name="manage" path="/zc13/bkmis/roomManage/roomManagelist.jsp"></forward>
+  	        <forward name="add" path="/zc13/bkmis/roomManage/addRoom.jsp"></forward>
+  	        <forward name="modify" path="/zc13/bkmis/roomManage/modifyRoom.jsp"></forward>
+  	        <forward name="batch" path="/zc13/bkmis/roomManage/batchIncreaseRoom.jsp"></forward>
+  	        <forward name="bj" path="/zc13/bkmis/roomManage/addBj.jsp"></forward>
+  	        <forward name="roomInfo" path="/zc13/bkmis/roomManage/roomInfo.jsp"></forward>
+  	        <forward name="history" path="/zc13/bkmis/roomManage/historyClientInfo.jsp"></forward>
+  	</action>
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

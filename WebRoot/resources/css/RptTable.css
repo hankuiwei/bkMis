@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/**
+* 该样式应用于锁定表头、编辑单元格等处
+*
+*/
+/**  div样式  **/
+.RptDiv{
+	overflow: auto;
+	cursor: default;
+	height:100%;
+	width:100%;
+	border: solid 1px gray; 
+}
+/**  表样式(现在有个问题就是，一旦表用了这个样式，那么便不出滚动条了)  **/
+.RptTable{
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	border-top:0px #266898 double;
+	border-left:0px #b2c2c9 solid;
+}
+/**  普通表头  **/
+.RptTableHead{
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	background-color: #A0E2FA;
+	  border-collapse:collapse; 
+}
+
+/**  锁定列和行  **/
+.RptTableHeadCellFullLock{
+	overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	z-index: 1;
+	position: relative; 
+	background:url(../../resources/images/final_caption_bg.jpg);
+	  
+	top: expression(this.parentElement.offsetParent.parentElement.scrollTop);
+	left: expression(this.parentElement.offsetParent.parentElement.scrollLeft);
+}
+/**  锁定第一行  **/
+.RptTableHeadCellLock{
+	
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	 border-collapse:collapse; 
+	border-left: 1px solid gray #DDEAFA;
+	border-bottom: 0px solid gray #DDEAFA;
+	position: relative; 
+	background:url(../../resources/images/final_caption_bg.jpg);
+	height:29px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	top: expression(this.parentElement.offsetParent.parentElement.scrollTop);
+}
+/**  tbody样式  **/
+.RptTableBody{
+	line-height: 24px;
+	background-color: white;
+	border-left: 1px solid #dfdfdf;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+/**  普通单元格样式  **/
+.RptTableBodyCell{
+	overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	height:25px;
+	 
+}
+/**  普通单元格文字  **/
+.RptTableCellClip{
+	word-break: keep-all;
+	white-space: nowrap;
+}
+/**  锁定第一列  **/
+.RptTableBodyCellLock{
+	overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+	background-color:#bdf;
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	left: expression(this.parentElement.offsetParent.parentElement.scrollLeft);
+}
+
+/*************************************************/
+.List_table{
+  
+  borderColor:#74A4BA; 		
+  border-collapse:collapse;
+  border-top: 0px solid #39F;
+  border-left: 0px solid #39F;
+  border-right: 0px solid #39F;
+  border-bottom: 1px solid #DDEAFA;
+  text-align:center;
+}
+
+.List_table td{
+  
+  borderColor:#74A4BA; 		
+  border-collapse:collapse; 
+  border-top: 1px solid #DDEAFA;
+  border-left: 1px solid #DDEAFA;
+  border-right: 0px solid #39F;
+  border-bottom: 0px solid #39F;
+  height:20px;
+  padding-top:3px;
+  text-align:center;
+}
+
+
+
+
+
+
+/*************普通table样式****************/
+
+
+.List_table_pt{
+  
+  borderColor:#74A4BA; 		
+  border-collapse:collapse;
+  border-top: 1px solid #39F;
+  border-left: 1px solid #39F;
+  border-right: 1px solid #39F;
+  border-bottom: 1px solid #39F;
+  text-align:center;
+}
+
+.List_table_pt td{
+  
+  borderColor:#74A4BA; 		
+  border-collapse:collapse; 
+  border-top: 1px solid #DDEAFA;
+  border-left: 1px solid #DDEAFA;
+  border-right: 0px solid #39F;
+  border-bottom: 0px solid #39F;
+  height:20px;
+  padding-top:3px;
+  text-align:center;
+}
+
+
+
+
+
+/***************鼠标触发行样式***************/
+.hover {
+	background-image:url(../images/tr_bg.jpg);
+	color:#000;
+	height:28;
+}

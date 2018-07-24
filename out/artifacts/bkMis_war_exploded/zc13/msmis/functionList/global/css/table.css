@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#datalist{
+	overflow:scroll;
+	font-size:13px;
+	height:100%;
+	text-align:center;
+	float:left;
+	width:100%;
+}
+
+.dg_table_head{
+	width:100%;
+	font-size:13px;
+
+}
+
+
+.dg_table{
+	font-size:13px;
+	width:100%;
+	height:auto;
+}
+
+.dg_table_head th{
+	font-size:14px;
+		color:#000;
+	border-top:1px solid #D3E6EE;
+	border-bottom:1px solid #9CBCD3;
+	background:url(../images/final_caption_bg.jpg);
+	background-repeat:repeat-x;
+	height:31px;
+}
+.dg_table_head tr{
+	height:31px;
+}
+
+
+.dg_table tr{
+	height:28px;
+}
+
+.dg_table_head td{ 
+	text-align:center;
+	border-top:1px solid #D3E6EE;
+	border-bottom:1px solid #9CBCD3;
+	height:25px;
+	margin:3px;
+}
+.dg_table td{ 
+	text-align:center;
+	border-top:1px solid #D3E6EE;
+	border-bottom:1px solid #9CBCD3;
+	height:25px;
+	margin:3px;
+}
+
+.text_left{
+	text-align:left;
+	margin-left:50px;
+	}	
+
+}
+.hover {
+	background-image:url(../images/table_body_bg.jpg);
+	color:#FFF;
+	height:28;
+}
+
+
+.dg_table a{
+	color:#000;
+}

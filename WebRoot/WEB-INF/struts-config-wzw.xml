@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  		<form-bean name="costTypeForm" type="com.zc13.bkmis.form.CostTypeForm"></form-bean>
+  		<form-bean name="costParaTypeForm" type="com.zc13.bkmis.form.CostParaTypeForm"></form-bean>
+  		<form-bean name="MeterInputForm" type="com.zc13.bkmis.form.MeterInputForm"></form-bean>
+  		<form-bean name="costTransactForm" type="com.zc13.bkmis.form.CostTransactForm"></form-bean>
+  		<form-bean name="shortcutsForm" type="com.zc13.bkmis.form.ShortcutsForm"></form-bean>
+  		<form-bean name="intentionForm" type="com.zc13.bkmis.form.IntentionForm"></form-bean>
+  		<form-bean name="attendanceForm" type="com.zc13.bkmis.form.AttendanceForm"></form-bean>
+  		<form-bean name="SMSForm" type="com.zc13.bkmis.form.SMSForm"></form-bean>
+  		<form-bean name="phoneCostForm" type="com.zc13.bkmis.form.PhoneCostForm"></form-bean>
+  		<form-bean name="invoiceForm" type="com.zc13.bkmis.form.InvoiceForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  	
+	<action path="/costType" name="costTypeForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.CostTypeAction">
+			<forward name="toShowCostTypeList" path="/zc13/bkmis/costManage/baseSet/costType.jsp" />
+  	</action>
+  	<action path="/costParaType" name="costParaTypeForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.CostParaTypeAction">
+			<forward name="toShowCostParaTypeList" path="/zc13/bkmis/costManage/baseSet/costParaType.jsp" />
+  	</action>
+  	<action path="/meterInput" name="MeterInputForm" parameter="method" type="com.zc13.bkmis.action.MeterInputAction">
+			<forward name="tree" path="/treeFram.jsp" />
+			<forward name="totalUserReadMeter" path="/zc13/bkmis/costManage/writeMeter/overAllMeterCost.jsp" />
+			<forward name="totalPublicReadMeter" path="/zc13/bkmis/costManage/writeMeter/overAllMeterCost_gt.jsp" />
+  			<forward name="toEditUserReadMeter" path="/zc13/bkmis/costManage/writeMeter/writeMeter2.jsp" />
+  			<forward name="toShowPublicReadMeterForYearAndId" path="/zc13/bkmis/costManage/writeMeter/writePublicMeterForSimple.jsp" />
+  			<forward name="toShowPublicReadMeter" path="/zc13/bkmis/costManage/writeMeter/writeMeter2_gt.jsp" />
+  	</action>
+  
+  	<action path="/costTransact" name="costTransactForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.CostTransactAction">
+			<forward name="toShowPressMoneyClient" path="/zc13/bkmis/costManage/pressMoneyClient.jsp" />
+			<forward name="toShowPressAdvanceClient" path="/zc13/bkmis/costManage/pressAdvanceClient.jsp" />
+			<forward name="toShowPressDepositClient" path="/zc13/bkmis/costManage/pressDepositClient.jsp" />
+			<forward name="toShowPressEarnestClient" path="/zc13/bkmis/costManage/pressEarnestClient.jsp" />
+  	</action>
+  	
+  	<!-- 快捷操作start -->
+  	<action path="/shortcuts" name="shortcutsForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.ShortcutsAction">
+  		<forward name="showAllClient" path="/zc13/bkmis/shortcuts/showAllClient.jsp" />
+  	</action>
+  	<!-- 快捷操作end -->
+  	
+  	<!-- 意向书start -->
+  	<action path="/intention" name="intentionForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.IntentionAction">
+  		<forward name="list" path="/zc13/bkmis/compactIntention/intentionList.jsp" />
+  		<forward name="toAdd" path="/zc13/bkmis/compactIntention/addIntention.jsp" />
+  		<forward name="toEdit" path="/zc13/bkmis/compactIntention/editIntention.jsp" />
+  		<forward name="toConvertCompact" path="/zc13/bkmis/compactIntention/IntentionConvertCompact.jsp" />
+  		<forward name="lookIntention" path="/zc13/bkmis/compactIntention/compactIntentionDetails.jsp" />
+  		<forward name="lookCompactIntentionCheck" path="/zc13/bkmis/compactIntention/checkCompactIntention.jsp" />
+  		<forward name="lookCompactIntentionPass" path="/zc13/bkmis/compactIntention/passCompactIntention.jsp" />
+  		<forward name="printList" path="/zc13/bkmis/compactIntention/printList.jsp" />
+  	</action>
+  	<!-- 意向书end -->
+  	
+  	<!-- 代办任务start -->
+  	
+  	<!-- 代办任务end -->
+  	
+  	<!-- 考勤start -->
+  	<action path="/attendance" name="attendanceForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.AttendanceAction">
+  		<forward name="showAttendance" path="/zc13/bkmis/attendance/showAttendanceList.jsp" />
+  		<forward name="showCurrentAttendance" path="/zc13/bkmis/attendance/showCurrentAttendance.jsp" />
+  	</action>
+  	<!-- 考勤end -->
+  	
+  	<!-- 短信服务start -->
+  	<action path="/sms" name="SMSForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.SMSAction">
+  		<forward name="showSMSList" path="/zc13/bkmis/SMS/SMSList.jsp" />
+  		<forward name="sendMessage" path="/zc13/bkmis/SMS/SMSend.jsp" />
+  	</action>
+  	<!-- 短信服务end -->
+  	
+  	<!-- 电话计费start -->
+  	<action path="/phoneCost" name="phoneCostForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.PhoneCostAction">
+  		<forward name="showPhoneCostInfoList" path="/zc13/bkmis/phoneWebService/list.jsp" />
+  		<forward name="showPhoneCostInfoDetails" path="/zc13/bkmis/phoneWebService/info.jsp" />
+  		<forward name="serviceProviderInfo" path="/zc13/bkmis/phoneWebService/editProvider.jsp" />
+  		<forward name="showRegionCodeList" path="/zc13/bkmis/phoneWebService/regionCodeList.jsp" />
+  		<forward name="showPhoneParameterList" path="/zc13/bkmis/phoneWebService/phoneParameterList.jsp" />
+  		<forward name="editCallInfo" path="/zc13/bkmis/phoneWebService/editCallInfo.jsp" />
+  		<forward name="printPhoneCostInfoList" path="/zc13/bkmis/phoneWebService/printList.jsp" />
+  		<forward name="printPhoneCostInfoDetails" path="/zc13/bkmis/phoneWebService/printInfo.jsp" />
+  		<forward name="toBatchUpdateCallInfo" path="/zc13/bkmis/phoneWebService/batchUpdateCallInfo.jsp" />
+  		<forward name="showCallInfoDetail" path="/zc13/bkmis/phoneWebService/callInfoDetail.jsp" />
+  	</action>
+  	<!-- 电话计费end -->
+  	
+  	<!-- 发票管理start -->
+  	<action path="/invoice" name="invoiceForm" parameter="method" scope="request"  type="com.zc13.bkmis.action.InvoiceAction">
+  		<forward name="receiptList" path="/zc13/bkmis/costManage/receiptManage/receiptList.jsp" />
+  		<forward name="openInvoice" path="/zc13/bkmis/costManage/receiptManage/openInvoice.jsp" />
+  		<forward name="showReceiptDetail" path="/zc13/bkmis/costManage/receiptManage/receiptDetail.jsp" />
+  		<forward name="invoiceList" path="/zc13/bkmis/costManage/receiptManage/invoiceList.jsp" />
+  		<forward name="showInvoiceDetail" path="/zc13/bkmis/costManage/receiptManage/invoiceDetail.jsp" />
+  		<forward name="receiptList_print" path="/zc13/bkmis/costManage/receiptManage/receiptList_print.jsp" />
+  		<forward name="invoiceList_print" path="/zc13/bkmis/costManage/receiptManage/invoiceList_print.jsp" />
+  	</action>
+  	<!-- 发票管理end -->
+  	
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

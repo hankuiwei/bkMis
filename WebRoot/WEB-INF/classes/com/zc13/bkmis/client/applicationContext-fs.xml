@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 基本功能映射 -->
+	<bean id="basicService" abstract="true">
+		  <property name="basicDAOImpl"><ref bean="basicDAO"/></property>
+	</bean>	
+	
+	<bean id="basicDAO" class="com.zc13.bkmis.dao.impl.BasicDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	
+	<!-- 功能列维护 -->
+	<bean id="functionListService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.FunctionListServiceImpl">
+			    <property name="functionListDaoImpl"><ref bean="functionListDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="functionListDao" class="com.zc13.msmis.dao.impl.FunctionListDaoImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	
+	<!-- 用户管理 -->
+	<bean id="IUserManagerDao" class="com.zc13.msmis.dao.impl.UserManagerDaoImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="IUserManagerService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.UserManagerServiceImpl">
+			    <property name="IUserManagerDao"><ref bean="IUserManagerDao"/></property>
+			    <property name="ISysParamManagerDAOImpl"><ref bean="ISysParamManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<!-- 个人信息管理 -->
+	<bean id="PersonManagerService" class="com.zc13.msmis.service.impl.PersonManagerServiceImpl" parent="basicService">
+	</bean>	
+	
+	<!-- 系统参数维护 -->
+	<bean id="ISysParamManagerDAO" class="com.zc13.msmis.dao.impl.SysParamManagerDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ISysParamManagerService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.SysParamServiceImpl">
+			    <property name="ISysParamManagerDAOImpl"><ref bean="ISysParamManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<!-- 日志管理 -->
+	<bean id="ILogManagerDAO" class="com.zc13.msmis.dao.impl.LogManageDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ILogManagerService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.LogManagerServiceImpl">
+			    <property name="ILogManagerDAO"><ref bean="ILogManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<!-- 报修项目管理 -->
+	<bean id="IRepairDAO" class="com.zc13.bkmis.dao.impl.RepairDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="IRepairService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.RepairServiceImpl">
+			    <property name="IRepairDAO"><ref bean="IRepairDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<!-- 客户报修管理 -->
+	<bean id="ISerClientMaintainDAO" class="com.zc13.bkmis.dao.impl.SerClientMaintainDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ISerClientMaintainService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.SerClientMaintainServiceImpl">
+			    <property name="ISerClientMaintainDAO"><ref bean="ISerClientMaintainDAO"/></property>
+			    <property name="icBillDao"><ref bean="icBillDao"/></property>
+			    <property name="ibuildsManageDao"><ref bean="ibuildsManageDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<!-- 客户投诉管理 -->
+	<bean id="ISerClientComplaintDAO" class="com.zc13.bkmis.dao.impl.SerClientComplaintDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ISerClientComplaintService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.SerClientComplaintServiceImpl">
+			    <property name="ISerClientComplaintDAO"><ref bean="ISerClientComplaintDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<!-- 客户合同管理 -->
+	<bean id="ICustomerRoomDAO" class="com.zc13.bkmis.dao.impl.CustomerRoomDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ICustomerRoomService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CustomerRoomServiceImpl">
+			    <property name="ICompactManagerDAO"><ref bean="ICompactManagerDAO"/></property>
+			    <property name="ICustomerRoomDAO"><ref bean="ICustomerRoomDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<!-- 招商租赁管理 -->
+	<bean id="ICompactManagerDAO" class="com.zc13.bkmis.dao.impl.CompactManagerDAOImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="ICompactManagerService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CompactManagerServiceImpl">
+			    <property name="ICompactManagerDAO"><ref bean="ICompactManagerDAO"/></property>
+			    <property name="ICustomerRoomDAO"><ref bean="ICustomerRoomDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+</beans>

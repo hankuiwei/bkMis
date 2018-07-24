@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  		<form-bean name="calculateForm" dynamic="true" type="com.zc13.bkmis.form.CalculateMoneyForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  	
+  	<!-- 计算费用用的action  -->
+	<action path="/calculate" name="calculateForm" parameter="method" scope= "request" type="com.zc13.bkmis.action.CalculateMoneyAction">
+  		<forward name="yearList" path="/zc13/bkmis/calculateMoney/yearCalculateMoneyList.jsp"></forward>
+  		<forward name="monthList" path="/zc13/bkmis/calculateMoney/monthCalculateMoneyList.jsp"></forward>
+  		<forward name="monthDetialList" path="/zc13/bkmis/calculateMoney/monthCalculateDetailList.jsp"></forward>
+  		<forward name="compactBillList" path="/zc13/bkmis/calculateMoney/compactBillList.jsp"></forward>
+  	</action>
+  	
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

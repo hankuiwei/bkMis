@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="ipersonnelService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.PersonnelServiceImpl">
+				<property name="ipersonnelDao" ref="ipersonnelDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="ipersonnelDao" class="com.zc13.bkmis.dao.impl.PersonnelDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 留学人员模块的配置 -->
+	<bean id="iexteriorpersonnelserivce" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.ExteriorPersonnelServiceImpl">
+				<property name="iexteriorpersonnelDao" ref="iexteriorpersonnelDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="iexteriorpersonnelDao" class="com.zc13.bkmis.dao.impl.ExteriorPersonnelDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 仓库管理模块的设置 -->
+	<bean id="idepotservice" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.DepotServiceImpl">
+				<property name="idepotdao" ref="idepotdao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="idepotdao" class="com.zc13.bkmis.dao.impl.DepotDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 入库管理模块的设置 -->
+	<bean id="inputdepotService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.InputDepotManageServiceImpl">
+				<property name="inputdepotDAO" ref="inputdepotDAO"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="inputdepotDAO" class="com.zc13.bkmis.dao.impl.InputDepotManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 出库管理模块 -->
+	<bean id="outputdepotService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.OutputDepotManageServiceImpl">
+				<property name="outputdepotDao" ref="outputdepotDao"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="outputdepotDao" class="com.zc13.bkmis.dao.impl.OutputDepotManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 材料现有库存	 -->
+	<bean id="existdepotService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.ExistDepotManageServiceImpl">
+				<property name="existdepotDao" ref="existdepotDao"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="existdepotDao" class="com.zc13.bkmis.dao.impl.ExistDepotManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 材料设置模块 -->
+	<bean id="setmaterialsService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.SetMaterialsManageServiceImpl">
+				<property name="setmaterialsDao" ref="setmaterialsDao"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="setmaterialsDao" class="com.zc13.bkmis.dao.impl.SetMaterialsManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 供应商管理模块 -->
+	<bean id="isupplierService" parent="txProxyTemplate"> 
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.DepotSupplierServiceImpl">
+				<property name="isupplierDAO" ref="isupplierDAO"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="isupplierDAO" class="com.zc13.bkmis.dao.impl.DepotSupplierDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 库存核算 -->
+	<bean id="iaccountService" parent="txProxyTemplate">
+		<property name="target">
+				<bean class="com.zc13.bkmis.service.impl.AccountDepotServiceImpl">
+					<property name="iaccountDAO" ref="iaccountDAO"></property>
+				</bean>			
+		</property>
+	</bean>
+	<bean id="iaccountDAO" class="com.zc13.bkmis.dao.impl.AccountDepotDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 综合信息统计模块-->
+	<!-- 客户分析  -->
+	<bean id="ianalysiscusService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.AnalysisCustomerServiceImpl">
+				<property name="ianalysiscusDAO" ref="ianalysiscusDAO"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="ianalysiscusDAO" class="com.zc13.bkmis.dao.impl.AnalysisCustomerDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 收费分析 -->
+	<bean id="ichargesService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.AnalysisChargesServiceImpl">
+				<property name="ichargeDAO" ref="ichargeDAO"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="ichargeDAO" class="com.zc13.bkmis.dao.impl.AnalysisChargesDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 能源分析 -->
+	<bean id="ienergyService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.AnalysisEnergyServiceImpl">
+				<property name="ienergyDAO" ref="ienergyDAO"></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="ienergyDAO" class="com.zc13.bkmis.dao.impl.AnalysisEnergyDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+    <!-- 新做汇总数据 -->
+	<bean id="calculateMoneyJob" class="com.zc13.quartz.CalculateJob">
+		<property name="calculateService" ref="calculateService"></property>
+	</bean>
+	<bean id="calculateMoneyJobDetail1" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">       
+		  <property name="targetObject"><ref bean="calculateMoneyJob"/></property>        
+		  <property name="targetMethod"><value>doCalculate</value></property> 
+		  <property name="concurrent" value="false" />
+	</bean> 
+	<bean id="cronTriggerCalculate" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	 	  <property name="jobDetail"> <ref bean="calculateMoneyJobDetail1"/></property>
+	  	  <!--每天23点30执行测试用 -->
+	  	  <property name="cronExpression"><value>0 30 23 * * ?</value></property>
+	  	  <!--<property name="cronExpression"><value>0 0/3 * * * ?</value></property>  -->
+	</bean> 
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean"> 
+	  <property name="triggers">
+	    <list>
+	    <ref local="cronTriggerCalculate"/>
+	   </list> 
+	  </property>   
+	</bean>
+</beans>

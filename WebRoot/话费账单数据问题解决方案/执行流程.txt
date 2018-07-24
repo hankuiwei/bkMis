@@ -1,0 +1,15 @@
+请按照这个流程执行。
+=====
+1.执行批量更新话单2014.4-2014.9。
+2.执行删除所有电话账单的SQL
+delete from c_bill where substring(bill_date,1,7)>='2014-05' and  item_id='66'
+
+3.执行把电话详单的操作人清空（5到9月账单）
+update e_call_info set root_user=NULL where substring(start_time,1,10) >='2014-04-26' and substring(end_time,1,10)<='2014-09-26'
+
+4.执行删除账单生成日志（从5月以来）
+delete  from c_build_bills_log where substring(build_date,1,10)  >='2014-05-26'
+执行完上述SQL后，把我发给您8月和9月的CLASS文件拷贝到TOMCAT对应路径下。先考8月，重启TOMCAT；再考9月的，再重启TOMCAT
+这样就可以更新，8月和9月的账单和通话详单。
+之后还是要把之前的CLASS还原回去
+=====

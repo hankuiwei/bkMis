@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/*tree的外边框*/
+.tab {
+	border-left: 1px solid #023f78;
+	border-bottom:1px solid #023f78;
+	border-right:1px solid #023f78;
+	background-color:#ffffff;
+}
+.meun_bt {
+	background-image: url(../images/index_25.jpg);
+	height:24px;
+	text-align:center;
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/RepairResult.do" location="431,0" dimension="286,84" />
+  <StrutsActivity path="/merchantsPlan.do" location="226,277" dimension="292,84" />
+  <StrutsActivity path="/financialBudget.do" location="172,554" dimension="304,84" />
+  <StrutsActivity path="/financialActual.do" location="172,831" dimension="304,84" />
+  <StrutsActivity path="/financialAandB.do" location="696,831" dimension="298,84" />
+  <StrutsActivity path="/trackRecord.do" location="950,350" dimension="298,84" />
+  <StrutsActivity path="/merchantsActual.do" location="650,1150" dimension="304,84" />
+  <StrutsActivity path="/merchantsAandP.do" location="50,1250" dimension="298,84" />
+  <StrutsActivity path="/financialReport.do" location="1250,1050" dimension="304,84" />
+  <StrutsActivity path="/zc13/bkmis/repairResult/dealRepairsResult.jsp" location="0,184" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/repairResult/editRepairsResult.jsp" location="416,184" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/repairResult/repairsResultList.jsp" location="832,184" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsPlan/editMerchantsPlan.jsp" location="0,461" dimension="322,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsPlan/merchantsPlanList.jsp" location="422,461" dimension="322,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsPlan/addMerchantsPlan.jsp" location="1250,850" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/financialBudget/editfin.jsp" location="0,738" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/financialBudget/finList.jsp" location="374,738" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/financialActual/editfin.jsp" location="0,1015" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/financialActual/finList.jsp" location="374,1015" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/financialActual/finAandBList.jsp" location="693,1015" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/trackRecord/addOrUpdate.jsp" location="50,1150" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/trackRecord/trackRecordList.jsp" location="950,650" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsActual/editMerchantsActual.jsp" location="650,1350" dimension="346,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsActual/merchantsActualList.jsp" location="50,1450" dimension="346,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsActual/addMerchantsActual.jsp" location="1250,950" dimension="340,48" />
+  <StrutsActivity path="/zc13/bkmis/merchantsActual/merAandPList.jsp" location="650,1450" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/addOrUpdateProject.jsp" location="50,1650" dimension="334,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/operate_income_list.jsp" location="50,1550" dimension="340,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/addOrUpdate.jsp" location="1250,1350" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/operate_cost_list.jsp" location="1250,1450" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/addOrUpdateIncome.jsp" location="650,1550" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/project_cost_list.jsp" location="1550,550" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/trackRecord/finAandBList.jsp" location="950,550" dimension="280,48" />
+  <StrutsActivity path="/zc13/bkmis/financialBudget/addfin.jsp" location="1250,750" dimension="268,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/merAandPList.jsp" location="1250,1250" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/operate_project_list.jsp" location="1250,1550" dimension="346,48" />
+  <StrutsActivity path="/zc13/bkmis/finacialReport/queryShow.jsp" />
+  <StrutsTransition id="/financialBudget.do,edit,/zc13/bkmis/financialBudget/editfin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,638" />
+      <AbsolutePoint location="187,738" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,addOrEditProject,/zc13/bkmis/finacialReport/addOrUpdateProject.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1122" />
+      <AbsolutePoint location="1132,1122" />
+      <AbsolutePoint location="1132,1674" />
+      <AbsolutePoint location="384,1674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,projectList,/zc13/bkmis/finacialReport/project_cost_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1402,1092" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsAandP.do,list,/zc13/bkmis/merchantsActual/merAandPList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="199,1334" />
+      <AbsolutePoint location="199,1413" />
+      <AbsolutePoint location="802,1413" />
+      <AbsolutePoint location="802,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/trackRecord.do,list,/zc13/bkmis/trackRecord/trackRecordList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1099,392" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsActual.do,list,/zc13/bkmis/merchantsActual/merchantsActualList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1183" />
+      <AbsolutePoint location="389,1183" />
+      <AbsolutePoint location="389,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,queryShow,/zc13/bkmis/finacialReport/addOrUpdateProject.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1554,1062" />
+      <AbsolutePoint location="1785,1062" />
+      <AbsolutePoint location="1785,1773" />
+      <AbsolutePoint location="217,1773" />
+      <AbsolutePoint location="217,1698" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,queryShow,/zc13/bkmis/finacialReport/queryShow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1402,1092" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialActual.do,list,/zc13/bkmis/financialActual/finList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="461,915" />
+      <AbsolutePoint location="461,1015" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RepairResult.do,repairResultList,/zc13/bkmis/repairResult/repairsResultList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="717,42" />
+      <AbsolutePoint location="990,42" />
+      <AbsolutePoint location="990,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,incomeList,/zc13/bkmis/finacialReport/operate_income_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1092" />
+      <AbsolutePoint location="539,1092" />
+      <AbsolutePoint location="539,1574" />
+      <AbsolutePoint location="390,1574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsActual.do,add,/zc13/bkmis/merchantsActual/addMerchantsActual.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="802,1192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsActual.do,edit,/zc13/bkmis/merchantsActual/editMerchantsActual.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="823,1234" />
+      <AbsolutePoint location="823,1350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsPlan.do,add,/zc13/bkmis/merchantsPlan/addMerchantsPlan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="518,319" />
+      <AbsolutePoint location="1533,319" />
+      <AbsolutePoint location="1533,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,list,/zc13/bkmis/finacialReport/operate_cost_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1554,1122" />
+      <AbsolutePoint location="1569,1122" />
+      <AbsolutePoint location="1569,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialAandB.do,list,/zc13/bkmis/financialActual/finAandBList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="845,915" />
+      <AbsolutePoint location="845,1015" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsPlan.do,list,/zc13/bkmis/merchantsPlan/merchantsPlanList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="437,361" />
+      <AbsolutePoint location="437,461" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RepairResult.do,repairResultRadioList,/zc13/bkmis/repairResult/dealRepairsResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="431,42" />
+      <AbsolutePoint location="158,42" />
+      <AbsolutePoint location="158,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/trackRecord.do,goAddOrEdit,/zc13/bkmis/trackRecord/addOrUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1099,392" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialActual.do,edit,/zc13/bkmis/financialActual/editfin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,915" />
+      <AbsolutePoint location="187,1015" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,addOrEditIncome,/zc13/bkmis/finacialReport/addOrUpdateIncome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1402,1092" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialBudget.do,list,/zc13/bkmis/financialBudget/finList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="461,638" />
+      <AbsolutePoint location="461,738" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/financialReport.do,addOrEdit,/zc13/bkmis/finacialReport/addOrUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1554,1092" />
+      <AbsolutePoint location="1665,1092" />
+      <AbsolutePoint location="1665,1374" />
+      <AbsolutePoint location="1542,1374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RepairResult.do,edit,/zc13/bkmis/repairResult/editRepairsResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="574,84" />
+      <AbsolutePoint location="574,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/merchantsPlan.do,edit,/zc13/bkmis/merchantsPlan/editMerchantsPlan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="307,361" />
+      <AbsolutePoint location="307,461" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

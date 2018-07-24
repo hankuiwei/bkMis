@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/equp.do" location="62,0" dimension="273,104" />
+  <StrutsActivity path="/treeFram.jsp" location="0,204" dimension="109,53" />
+  <StrutsActivity path="/zc13/bkmis/equipment/type/setType.jsp" location="209,204" dimension="270,53" />
+  <StrutsTransition id="/equp.do,MaterightJsp,/zc13/bkmis/equipment/type/setType.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="267,104" />
+      <AbsolutePoint location="267,154" />
+      <AbsolutePoint location="344,154" />
+      <AbsolutePoint location="344,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/equp.do,typeList,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="131,104" />
+      <AbsolutePoint location="131,154" />
+      <AbsolutePoint location="54,154" />
+      <AbsolutePoint location="54,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

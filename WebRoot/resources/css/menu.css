@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSS Document */
+/*menu的外边框*/
+body,div, span, td, th, input,select, option a:link,a:visited,a:hover,a:active
+{
+    font-family:"Arial, Helvetica, sans-serif";
+    font-size:12px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.table_DataArea {
+border-collapse:collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
+border:solid #b2c2c9; /* 设置边框属性；样式(solid=实线)、颜色(#999=灰) */
+border-top:4px #21699C double;
+border-left:1px #b2c2c9 solid;
+border-left:1px;
+border-right:1px;
+border-bottom:1px;
+}
+
+.table_DataArea  th,.table_DataArea  td {border:solid #b2c2c9;border-width:1px 1px 1px 1px;padding:2px;}
+.table_caption_gb{ background-color:#d3e3f4}
+
+a:link {				
+	color: blue;
+	text-decoration: none 
+}
+
+a:visited {				
+	color: blue;
+	text-decoration: none
+}
+
+a:hover{
+	color: #FF9900;
+    text-decoration: none
+}
+
+a:active{
+	color: #FF9900;
+	text-decoration: none
+}
+
+.menu_tab {
+	border-left: 1px solid #023f78;
+	border-bottom:1px solid #023f78;
+	border-right:1px solid #023f78;
+	background-color:#ffffff;
+}
+/*链接板块IE样式*/
+.line_bt {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+	background-image: url(../images/index_23_2.gif);
+	height:24px;
+	width:110px;
+	cursor:hand;
+	border-right:1px #9db0bc  double;
+	background-repeat: no-repeat;
+}
+/*选中链接板块IE样式*/
+.line_choosebt {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #ffffff;
+	background-image: url(../images/index_23.gif);
+	height:24px;
+	cursor:hand;
+	border-right:1px #023f78 solid;
+	width:110px;
+	background-repeat: no-repeat;
+}
+.line_choosebt_1 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #ffffff;
+	background-image: url(../images/index_23.gif);
+	height:24px;
+	border-right:1px #023f78 solid;
+	width:110px;
+	background-repeat: no-repeat;
+}
+
+.line_bt_1 {
+			font-family: "宋体";
+			font-size: 12px;
+			color: #000000;
+			background-image: url(../images/index_23_2.gif);
+			height:24px;
+			width:100px;
+			cursor:hand;
+			border-right:1px #9db0bc  double;
+			background-repeat: no-repeat;
+		}
+		
+		.line_choosebt_2 {
+			font-family: "宋体";
+			font-size: 12px;
+			color: #ffffff;
+			background-image: url(../images/index_23.gif);
+			height:24px;
+			border-right:1px #023f78 solid;
+			width:100px;
+			background-repeat: no-repeat;
+		}
+
+/*显示详细区域的边框样式*/
+.menu_tab2 {
+	border-left: 1px solid #b3b3b3;
+	border-bottom:1px solid #b3b3b3;
+	border-right:1px solid #b3b3b3;
+	background-color:#ffffff;
+	padding-left:8px;
+	padding-right:8px;
+	padding-bottom:1px;
+}
+/*上下翻页或结束Button区域样式*/
+.boittom_low {
+	background-image: url(../images/index_47.jpg);
+	height:30px;
+}
+/*提示区域样式*/
+.see_low {
+	background-image: url(../images/index_51.jpg);
+	height:28px;
+	font-size:12px;
+}
+/*数据区内容标题背景拼图样式1*/
+.form_line {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000000;
+	background-image: url(../images/index_32.jpg);
+	text-align: left;
+	padding-left:12px;
+}
+/*数据区内容标题背景拼图样式2*/
+.form_line2 {
+	background-image: url(../images/index_35.jpg);
+	text-align: left;
+	vertical-align: bottom;
+}
+.form_line3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-image: url(../images/index_47.jpg);
+	text-align: center;
+	height:30px;
+	vertical-align: middle;
+}
+
+.input{
+	border:1px #CDCDCD solid;
+	height:16px;
+	}
+/*多行表格（表头）样式*/	
+.head_form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #d3e3f4;
+	text-align: center;
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	height:25px;
+}
+/*多行表格（行）样式*/	
+.head_form1 {
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	height:25px;
+}
+
+/*单行表格*/	
+/*最左上角的td样式*/
+.head_rols{
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	border-top:1px #74A4BA solid;
+	border-left:1px #74A4BA solid;
+	height:25px;
+}
+/*第一行的td样式*/
+.fist_rows{
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	border-top:1px #74A4BA solid;
+	height:25px;
+}
+/*每行的第一列的td样式*/	
+.head_left{
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	border-left:1px #74A4BA solid;
+	height:25px;
+}
+/*有背景色单行表格（行）样式*/	
+.head_one {
+	border-bottom:1px #74A4BA solid;
+	border-right:1px #74A4BA solid;
+	border-top:1px #74A4BA solid;
+	border-left:1px #74A4BA solid;
+	background-color: #d3e3f4;
+	height:25px;
+}
+
+
+
+
+/*隔行显示样式*/
+
+.row1{
+	background-color:#ffffff;
+}
+
+.row0{
+	background-color:#ECF3FB;
+}
+
+
+/*选中行样式*/
+
+.rowchoose{
+	background-color:#CCF7ED;
+}
+
+.table_DataArea1 {
+border-collapse:collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
+border:solid #b2c2c9; /* 设置边框属性；样式(solid=实线)、颜色(#999=灰) */
+border-top:1px #b2c2c9 solid;
+border-left:1px #b2c2c9 solid;
+border-left:1px;
+border-right:1px;
+border-bottom:1px;
+}
+
+.table_DataArea1  th,.table_DataArea1  td {border:solid #b2c2c9;border-width:1px 1px 1px 1px;padding:2px;}
+
+.login_bg{ background:url(../images/login_bg.gif);}
+
+.login_qg{ background:url(../images/login_qg.jpg); background-repeat:no-repeat; width:652px; height:258px;}
+
+.login_caption_wz{ font-size:14px; color:#FFFFFF; font-weight:bold;}
+
+.login_Text_wz{ font-size:12px; color:#FFFFFF; font-weight:bold;}
+
+ .form_tab2{
+	border-top:1px #74A4BA double;
+	border-left:1px #74A4BA solid;
+	border-bottom:0px #b2c2c9 solid;
+	border-top:1px #74A4BA solid;
+	
+}
+
+ .input_1{ border-left-color:#FFFFFF; border-right-color:#FFFFFF; border-top-color:#FFFFFF; border-bottom-color:#74A4BA;}
+
+/*main模块top处标题文字颜色*/
+.txt_1 {
+	color: #ffffff;
+	font-weight:400;
+}
+.txt_1 a:link {				
+	color: #ffffff;
+	text-decoration: none 
+}
+
+.txt_1 a:visited {				
+	color: blue;
+	text-decoration: none
+}
+
+.txt_1 a:hover{
+	color: #FDFE02;
+	font-weight:BOLD;
+    text-decoration: none
+}
+
+.txt_1 a:active{
+	color: #FF9900;
+	text-decoration: none
+}
+/* 文字过长，造成文字换行，影响显示效果。 */
+ .titletest{
+         width:100px;
+         white-space:nowrap;
+         word-break:keep-all;
+         overflow:hidden;
+         text-overflow:ellipsis;
+     	}

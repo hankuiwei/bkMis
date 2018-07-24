@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/personnel.do" location="1586,387" dimension="268,84" />
+  <StrutsActivity path="/upload.do" location="1169,2099" dimension="304,84" />
+  <StrutsActivity path="/exterior.do" location="711,991" dimension="280,84" />
+  <StrutsActivity path="/depot.do" location="3729,0" dimension="244,84" />
+  <StrutsActivity path="/inputdepot.do" location="4958,0" dimension="310,84" />
+  <StrutsActivity path="/inputmanage.do" location="8146,0" dimension="316,84" />
+  <StrutsActivity path="/outputdepot.do" location="829,0" dimension="316,84" />
+  <StrutsActivity path="/outputmanage.do" location="6120,0" dimension="322,84" />
+  <StrutsActivity path="/existdepot.do" location="4433,0" dimension="310,84" />
+  <StrutsActivity path="/setmaterials.do" location="2415,0" dimension="322,84" />
+  <StrutsActivity path="/supplier.do" location="413,2099" dimension="292,84" />
+  <StrutsActivity path="/accountDepot.do" location="630,1268" dimension="286,84" />
+  <StrutsActivity path="/analysisCus.do" location="961,714" dimension="310,84" />
+  <StrutsActivity path="/analysisCha.do" location="497,1545" dimension="304,84" />
+  <StrutsActivity path="/analysisEng.do" location="491,1822" dimension="298,84" />
+  <StrutsActivity path="/zc13/bkmis/personnel/showDispatchPersonnel.jsp" location="0,621" dimension="322,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/viewWorkingConditionsDetail4Person.jsp" location="422,621" dimension="400,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/showDispatchPersonnelDialog.jsp" location="922,621" dimension="358,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/viewPersonDetail.jsp" location="1380,621" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/modifyPersonnel.jsp" location="1772,621" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/upload.jsp" location="2158,621" dimension="232,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/addPersonnel.jsp" location="2490,621" dimension="268,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/personnel.jsp" location="2858,621" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/personnel/downloadError.jsp" location="1184,2283" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/exterior_personnel/addexteriorper.jsp" location="0,1175" dimension="334,48" />
+  <StrutsActivity path="/zc13/bkmis/exterior_personnel/viewExteriorperDetail.jsp" location="434,1175" dimension="376,48" />
+  <StrutsActivity path="/zc13/bkmis/exterior_personnel/editexteriorper.jsp" location="910,1175" dimension="340,48" />
+  <StrutsActivity path="/zc13/bkmis/exterior_personnel/exteriorpersonnel.jsp" location="1350,1175" dimension="352,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/addSecondType.jsp" location="3220,294" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/jump.jsp" location="3606,294" dimension="232,48" />
+  <StrutsActivity path="/treeFram.jsp" location="4680,294" dimension="118,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/setType.jsp" location="3938,294" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/showInputChoose.jsp" location="5330,294" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/inputChooseMaterials.jsp" location="4902,294" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/inputListPrint.jsp" location="8158,294" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/inputDepotList.jsp" location="7350,294" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/addInputMaterials.jsp" location="8948,294" dimension="310,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/editInputMaterials.jsp" location="7742,294" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/inputManageList.jsp" location="8550,294" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/viewInputDetail.jsp" location="9358,294" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/outputManageList.jsp" location="1254,294" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/showOutputChoose.jsp" location="0,294" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/outputChooseMaterials.jsp" location="820,294" dimension="334,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/addOutputMaterials.jsp" location="404,294" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/outputListPrint.jsp" location="6132,294" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/viewOutputDetail.jsp" location="5728,294" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/editOutputMaterials.jsp" location="6530,294" dimension="322,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/outputDepotList.jsp" location="6952,294" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/existMaterials.jsp" location="4288,294" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/materialDetail.jsp" location="2044,294" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/editMaterials.jsp" location="1658,294" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/addMaterials.jsp" location="2436,294" dimension="280,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/setMaterialsList.jsp" location="2816,294" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/addDepotSupplier.jsp" location="0,2283" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/editDepotSupplier.jsp" location="404,2283" dimension="310,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/depotSupplierList.jsp" location="814,2283" dimension="310,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/accountDepotPrint.jsp" location="0,1452" dimension="310,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/addInventoryAccount.jsp" location="410,1452" dimension="322,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/detailAccount.jsp" location="832,1452" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/depotManage/inventoryAccountList.jsp" location="1218,1452" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/CustomerAnalysis.jsp" location="0,898" dimension="352,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/detailGraphicsAnalysis.jsp" location="452,898" dimension="388,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/graphicsAnalysis.jsp" location="940,898" dimension="352,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/addCustomerAnalysis.jsp" location="1392,898" dimension="370,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/customerDetail.jsp" location="1862,898" dimension="340,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/addChargesAnalysis.jsp" location="0,1729" dimension="364,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/graphicsChaAnalysis.jsp" location="464,1729" dimension="370,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/ChargesAnalysis.jsp" location="934,1729" dimension="346,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/graphicsEngAnalysis.jsp" location="0,2006" dimension="370,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/EnergyAnalysis.jsp" location="470,2006" dimension="340,48" />
+  <StrutsActivity path="/zc13/bkmis/informationAnalysis/addEnergyAnalysis.jsp" location="910,2006" dimension="358,48" />
+  <StrutsTransition id="/inputmanage.do,addInput,/zc13/bkmis/depotManage/addInputMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8395,84" />
+      <AbsolutePoint location="8395,144" />
+      <AbsolutePoint location="9103,144" />
+      <AbsolutePoint location="9103,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/upload.do,error,/zc13/bkmis/personnel/downloadError.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1321,2183" />
+      <AbsolutePoint location="1321,2283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/existdepot.do,existMaterials,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4665,84" />
+      <AbsolutePoint location="4665,114" />
+      <AbsolutePoint location="4739,114" />
+      <AbsolutePoint location="4739,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,edit,/zc13/bkmis/personnel/modifyPersonnel.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1737,471" />
+      <AbsolutePoint location="1737,591" />
+      <AbsolutePoint location="1915,591" />
+      <AbsolutePoint location="1915,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCus.do,seeGraphic,/zc13/bkmis/informationAnalysis/graphicsAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1116,798" />
+      <AbsolutePoint location="1116,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputmanage.do,showTreeAndDetailIutput,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8169,84" />
+      <AbsolutePoint location="8169,204" />
+      <AbsolutePoint location="4789,204" />
+      <AbsolutePoint location="4789,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputmanage.do,editOutput,/zc13/bkmis/depotManage/editOutputMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6346,84" />
+      <AbsolutePoint location="6346,144" />
+      <AbsolutePoint location="6691,144" />
+      <AbsolutePoint location="6691,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/exterior.do,addExteriorPer,/zc13/bkmis/exterior_personnel/addexteriorper.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="746,1075" />
+      <AbsolutePoint location="746,1110" />
+      <AbsolutePoint location="167,1110" />
+      <AbsolutePoint location="167,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/exterior.do,viewDetail,/zc13/bkmis/exterior_personnel/viewExteriorperDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="816,1075" />
+      <AbsolutePoint location="816,1140" />
+      <AbsolutePoint location="622,1140" />
+      <AbsolutePoint location="622,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/supplier.do,showSupplier,/zc13/bkmis/depotManage/depotSupplierList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="656,2183" />
+      <AbsolutePoint location="656,2233" />
+      <AbsolutePoint location="969,2233" />
+      <AbsolutePoint location="969,2283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputmanage.do,showTreeAndOutputDetail,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6152,84" />
+      <AbsolutePoint location="6152,144" />
+      <AbsolutePoint location="4772,144" />
+      <AbsolutePoint location="4772,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accountDepot.do,showAccount,/zc13/bkmis/depotManage/inventoryAccountList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="880,1352" />
+      <AbsolutePoint location="880,1387" />
+      <AbsolutePoint location="1382,1387" />
+      <AbsolutePoint location="1382,1452" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputdepot.do,outputManage,/zc13/bkmis/depotManage/outputManageList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,84" />
+      <AbsolutePoint location="1050,234" />
+      <AbsolutePoint location="1406,234" />
+      <AbsolutePoint location="1406,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisEng.do,graphic,/zc13/bkmis/informationAnalysis/graphicsEngAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,1906" />
+      <AbsolutePoint location="540,1956" />
+      <AbsolutePoint location="185,1956" />
+      <AbsolutePoint location="185,2006" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCha.do,addCharge,/zc13/bkmis/informationAnalysis/addChargesAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="547,1629" />
+      <AbsolutePoint location="547,1679" />
+      <AbsolutePoint location="182,1679" />
+      <AbsolutePoint location="182,1729" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/existdepot.do,mainFramJsp,/zc13/bkmis/depotManage/existMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4510,84" />
+      <AbsolutePoint location="4510,234" />
+      <AbsolutePoint location="4434,234" />
+      <AbsolutePoint location="4434,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,addPersonnel,/zc13/bkmis/personnel/addPersonnel.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1804,471" />
+      <AbsolutePoint location="1804,531" />
+      <AbsolutePoint location="2624,531" />
+      <AbsolutePoint location="2624,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/depot.do,typeList,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3943,84" />
+      <AbsolutePoint location="3943,144" />
+      <AbsolutePoint location="4722,144" />
+      <AbsolutePoint location="4722,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputmanage.do,viewInput,/zc13/bkmis/depotManage/viewInputDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8440,84" />
+      <AbsolutePoint location="8440,114" />
+      <AbsolutePoint location="9507,114" />
+      <AbsolutePoint location="9507,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,showDispatchPersonnelDialog,/zc13/bkmis/personnel/showDispatchPersonnelDialog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1670,471" />
+      <AbsolutePoint location="1670,561" />
+      <AbsolutePoint location="1101,561" />
+      <AbsolutePoint location="1101,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/depot.do,addSecond,/zc13/bkmis/depotManage/addSecondType.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3760,84" />
+      <AbsolutePoint location="3760,234" />
+      <AbsolutePoint location="3363,234" />
+      <AbsolutePoint location="3363,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/setmaterials.do,detailMaterial,/zc13/bkmis/depotManage/materialDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2511,84" />
+      <AbsolutePoint location="2511,264" />
+      <AbsolutePoint location="2190,264" />
+      <AbsolutePoint location="2190,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/setmaterials.do,add,/zc13/bkmis/depotManage/addMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2576,84" />
+      <AbsolutePoint location="2576,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCus.do,addAnalysis,/zc13/bkmis/informationAnalysis/addCustomerAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1178,798" />
+      <AbsolutePoint location="1178,863" />
+      <AbsolutePoint location="1577,863" />
+      <AbsolutePoint location="1577,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,upload,/zc13/bkmis/personnel/upload.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1770,471" />
+      <AbsolutePoint location="1770,561" />
+      <AbsolutePoint location="2274,561" />
+      <AbsolutePoint location="2274,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,showPersonnel,/zc13/bkmis/personnel/personnel.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1837,471" />
+      <AbsolutePoint location="1837,501" />
+      <AbsolutePoint location="2983,501" />
+      <AbsolutePoint location="2983,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCus.do,showAnalysis,/zc13/bkmis/informationAnalysis/CustomerAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="992,798" />
+      <AbsolutePoint location="992,833" />
+      <AbsolutePoint location="176,833" />
+      <AbsolutePoint location="176,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCha.do,selectAnalysis,/zc13/bkmis/informationAnalysis/graphicsChaAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="649,1629" />
+      <AbsolutePoint location="649,1729" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputdepot.do,chooseOutMaterails,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1113,84" />
+      <AbsolutePoint location="1113,204" />
+      <AbsolutePoint location="4688,204" />
+      <AbsolutePoint location="4688,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accountDepot.do,detailAccount,/zc13/bkmis/depotManage/detailAccount.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="808,1352" />
+      <AbsolutePoint location="808,1417" />
+      <AbsolutePoint location="975,1417" />
+      <AbsolutePoint location="975,1452" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/depot.do,jumpPage,/zc13/bkmis/depotManage/jump.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3821,84" />
+      <AbsolutePoint location="3821,264" />
+      <AbsolutePoint location="3722,264" />
+      <AbsolutePoint location="3722,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/supplier.do,addSupplier,/zc13/bkmis/depotManage/addDepotSupplier.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="461,2183" />
+      <AbsolutePoint location="461,2233" />
+      <AbsolutePoint location="152,2233" />
+      <AbsolutePoint location="152,2283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/exterior.do,editPer,/zc13/bkmis/exterior_personnel/editexteriorper.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="886,1075" />
+      <AbsolutePoint location="886,1140" />
+      <AbsolutePoint location="1080,1140" />
+      <AbsolutePoint location="1080,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputmanage.do,editInput,/zc13/bkmis/depotManage/editInputMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8259,84" />
+      <AbsolutePoint location="8259,264" />
+      <AbsolutePoint location="7900,264" />
+      <AbsolutePoint location="7900,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCus.do,customerDetail,/zc13/bkmis/informationAnalysis/customerDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1240,798" />
+      <AbsolutePoint location="1240,833" />
+      <AbsolutePoint location="2032,833" />
+      <AbsolutePoint location="2032,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCus.do,detailGraphic,/zc13/bkmis/informationAnalysis/detailGraphicsAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1054,798" />
+      <AbsolutePoint location="1054,863" />
+      <AbsolutePoint location="646,863" />
+      <AbsolutePoint location="646,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,viewWorkingConditionsDetail,/zc13/bkmis/personnel/viewWorkingConditionsDetail4Person.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1636,471" />
+      <AbsolutePoint location="1636,531" />
+      <AbsolutePoint location="622,531" />
+      <AbsolutePoint location="622,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/setmaterials.do,MaterialsList,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2704,84" />
+      <AbsolutePoint location="2704,174" />
+      <AbsolutePoint location="4705,174" />
+      <AbsolutePoint location="4705,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/setmaterials.do,edit,/zc13/bkmis/depotManage/editMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2447,84" />
+      <AbsolutePoint location="2447,234" />
+      <AbsolutePoint location="1801,234" />
+      <AbsolutePoint location="1801,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputmanage.do,showInput,/zc13/bkmis/depotManage/inputManageList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8349,84" />
+      <AbsolutePoint location="8349,174" />
+      <AbsolutePoint location="8699,174" />
+      <AbsolutePoint location="8699,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputdepot.do,mainFramJsp,/zc13/bkmis/depotManage/outputChooseMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="987,84" />
+      <AbsolutePoint location="987,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/setmaterials.do,mainFramJsp,/zc13/bkmis/depotManage/setMaterialsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2640,84" />
+      <AbsolutePoint location="2640,234" />
+      <AbsolutePoint location="2968,234" />
+      <AbsolutePoint location="2968,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputmanage.do,outputListPrint,/zc13/bkmis/depotManage/outputListPrint.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6281,84" />
+      <AbsolutePoint location="6281,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputmanage.do,inDetail,/zc13/bkmis/depotManage/inputDepotList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8214,84" />
+      <AbsolutePoint location="8214,234" />
+      <AbsolutePoint location="7496,234" />
+      <AbsolutePoint location="7496,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputmanage.do,viewOutput,/zc13/bkmis/depotManage/viewOutputDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6217,84" />
+      <AbsolutePoint location="6217,174" />
+      <AbsolutePoint location="5880,174" />
+      <AbsolutePoint location="5880,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputdepot.do,mainFramJsp,/zc13/bkmis/depotManage/inputChooseMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5113,84" />
+      <AbsolutePoint location="5113,114" />
+      <AbsolutePoint location="5066,114" />
+      <AbsolutePoint location="5066,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,showDispatchPersonnel,/zc13/bkmis/personnel/showDispatchPersonnel.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1603,471" />
+      <AbsolutePoint location="1603,501" />
+      <AbsolutePoint location="161,501" />
+      <AbsolutePoint location="161,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accountDepot.do,printAccountDetail,/zc13/bkmis/depotManage/accountDepotPrint.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="665,1352" />
+      <AbsolutePoint location="665,1387" />
+      <AbsolutePoint location="155,1387" />
+      <AbsolutePoint location="155,1452" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputdepot.do,showChoose,/zc13/bkmis/depotManage/showInputChoose.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5216,84" />
+      <AbsolutePoint location="5216,114" />
+      <AbsolutePoint location="5479,114" />
+      <AbsolutePoint location="5479,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/exterior.do,showExteriorPer,/zc13/bkmis/exterior_personnel/exteriorpersonnel.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="956,1075" />
+      <AbsolutePoint location="956,1110" />
+      <AbsolutePoint location="1526,1110" />
+      <AbsolutePoint location="1526,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputdepot.do,addOutput,/zc13/bkmis/depotManage/addOutputMaterials.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="923,84" />
+      <AbsolutePoint location="923,144" />
+      <AbsolutePoint location="562,144" />
+      <AbsolutePoint location="562,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputmanage.do,inputListPrint,/zc13/bkmis/depotManage/inputListPrint.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8304,84" />
+      <AbsolutePoint location="8304,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputmanage.do,outDetail,/zc13/bkmis/depotManage/outputDepotList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6410,84" />
+      <AbsolutePoint location="6410,114" />
+      <AbsolutePoint location="7101,114" />
+      <AbsolutePoint location="7101,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accountDepot.do,addAccount,/zc13/bkmis/depotManage/addInventoryAccount.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="737,1352" />
+      <AbsolutePoint location="737,1417" />
+      <AbsolutePoint location="571,1417" />
+      <AbsolutePoint location="571,1452" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisCha.do,showCharge,/zc13/bkmis/informationAnalysis/ChargesAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="750,1629" />
+      <AbsolutePoint location="750,1679" />
+      <AbsolutePoint location="1107,1679" />
+      <AbsolutePoint location="1107,1729" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisEng.do,addEnergy,/zc13/bkmis/informationAnalysis/addEnergyAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="739,1906" />
+      <AbsolutePoint location="739,1956" />
+      <AbsolutePoint location="1089,1956" />
+      <AbsolutePoint location="1089,2006" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/analysisEng.do,showEnergy,/zc13/bkmis/informationAnalysis/EnergyAnalysis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="640,1906" />
+      <AbsolutePoint location="640,2006" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/outputdepot.do,showChoose,/zc13/bkmis/depotManage/showOutputChoose.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="860,84" />
+      <AbsolutePoint location="860,114" />
+      <AbsolutePoint location="152,114" />
+      <AbsolutePoint location="152,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/depot.do,MaterightJsp,/zc13/bkmis/depotManage/setType.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3882,84" />
+      <AbsolutePoint location="3882,234" />
+      <AbsolutePoint location="4063,234" />
+      <AbsolutePoint location="4063,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personnel.do,viewDetail,/zc13/bkmis/personnel/viewPersonDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1703,471" />
+      <AbsolutePoint location="1703,591" />
+      <AbsolutePoint location="1526,591" />
+      <AbsolutePoint location="1526,621" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/supplier.do,edidSupplier,/zc13/bkmis/depotManage/editDepotSupplier.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="559,2183" />
+      <AbsolutePoint location="559,2283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inputdepot.do,chooseMaterials,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5009,84" />
+      <AbsolutePoint location="5009,114" />
+      <AbsolutePoint location="4755,114" />
+      <AbsolutePoint location="4755,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height:100%;
+	overflow: hidden;
+	onselectstart: return false;
+}
+
+.body {
+	background-image:url(../images/user_login_top.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
+
+a:link {				
+	color: #FFFFFF;
+	text-decoration: none 
+}
+
+a:visited {				
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+a:hover{
+	color:#b2b2b2;
+    text-decoration: none
+}
+
+a:active{
+	color:#b2b2b2;
+	text-decoration: none
+}
+
+
+
+
+
+#player{
+	height:318px;
+	background-color:#80a6c2;
+	}
+
+#search_simple{
+	display:none;
+	height:auto;
+	background-color:#80a6c2;
+}
+
+#search_simple_1{
+	height:auto;
+	background-color:#80a6c2;
+	}
+
+
+#search_simple input{
+	/*background-image:url(../images/serch_input.jpg);*/
+	float:left;
+	/*border:solid 1px #fff;*/
+	margin-right:10px;
+	width:380px;
+	height:22px;
+	font-size:18px
+}
+
+#search_advanced{
+	display:none;
+	height:auto;
+	width:100%;
+	padding-top:10px;
+}
+
+#search_advanced input{
+	/*background-image:url(../images/serch_input.jpg);*/
+	font-size:18px;
+	float:left;
+	/*border:solid 1px #fff;*/
+	margin-right:10px;
+	height:22px;
+}
+
+
+.button_search{
+	cursor:pointer;
+	float:left;
+	width:80px;
+	height:26px;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 315px 93px;
+}
+
+.button_search:hover{
+	background-position: 315px 63px;
+}
+
+
+.button{
+	margin:0px 2px 0px 2px;
+	color:#e0e0e0;
+	font-size:14px;
+	cursor:pointer;
+	float:left;
+	width:50px;
+	_width:65px;
+	padding:4px 5px 0px 5px;
+	height:22px;
+	text-align:center;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 634px 92px;
+}
+
+.button:hover{
+	color:#FFF;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 634px 64px;
+}
+
+
+
+.button1{
+	margin:0px 2px 0px 2px;
+	color:#e0e0e0;
+	font-size:14px;
+	cursor:pointer;
+	width:50px;
+	_width:65px;
+	padding:4px 5px 0px 5px;
+	height:22px;
+	text-align:center;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 634px 92px;
+}
+
+.button1:hover{
+	color:#FFF;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 634px 64px;
+}
+
+
+
+.toolbar{
+	background-image:url(../images/menu_btn_bg_13.jpg);
+	width:100%;
+	height:33px;
+	float:left;
+}
+
+
+.paging{
+	padding:5px;
+}
+
+.paging .previous{
+	cursor:pointer;
+	float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 483px 27px;
+}
+
+.paging .next{
+	cursor:pointer;
+	float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 423px 27px;
+}
+
+.paging .num{
+	color:#000;
+	cursor:pointer;
+	float:left;
+	width:20px;
+	height:20px;
+	text-align:center;
+	background-image: url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 443px 27px;
+}
+
+.paging .num:hover{
+	float:left;
+	width:20px;
+	height:20px;
+	text-align:center;
+	background-image: url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 463px 27px;
+}
+
+
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean id="costTypeService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CostTypeServiceImpl">
+			    <property name="costTypeDAO"><ref bean="costTypeDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="costTypeDAO" class="com.zc13.bkmis.dao.impl.CostTypeDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	
+	<bean id="costParaTypeService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CostParaTypeServiceImpl">
+			    <property name="costParaTypeDAO"><ref bean="costParaTypeDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="costParaTypeDAO" class="com.zc13.bkmis.dao.impl.CostParaTypeDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	
+	<bean id="writeMeterService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.WriteMeterServiceImpl">
+			    <property name="writeMeterDAO"><ref bean="writeMeterDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="writeMeterDAO" class="com.zc13.bkmis.dao.impl.WriteMeterDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	
+	<bean id="costTransactService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CostTransactServiceImpl">
+			    <property name="costParaTypeDAO"><ref bean="costParaTypeDAO"/></property>
+			    <property name="costTransactDAO"><ref bean="costTransactDAO"/></property>
+			    <property name="accountTemplateDAO"><ref bean="icAccounttemplateDao"/></property>
+			    <property name="buildBillsLogDAO"><ref bean="buildBillsLogDAO"/></property>
+			    <property name="icBillDao"><ref bean="icBillDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="costTransactDAO" class="com.zc13.bkmis.dao.impl.CostTransactDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<bean id="buildBillsLogDAO" class="com.zc13.bkmis.dao.impl.BuildBillsLogDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	
+	<!-- 意向书start -->
+	<bean id="intentionService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.IntentionServiceImpl">
+			    <property name="intentionDAO"><ref bean="intentionDAO"/></property>
+			    <property name="destineDAO"><ref bean="destineDAO"/></property>
+			    <property name="compactManagerDAO"><ref bean="ICompactManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="intentionDAO" class="com.zc13.bkmis.dao.impl.IntentionDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 意向书end -->
+	
+	<!-- 代办任务start -->
+	<bean id="awokeTaskService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.AwokeTaskServiceImpl">
+			    <property name="awokeTaskDAO"><ref bean="awokeTaskDAO"/></property>
+			    <property name="costTransactDAO"><ref bean="costTransactDAO"/></property>
+			    <property name="compactManagerDAO"><ref bean="ICompactManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="awokeTaskDAO" class="com.zc13.bkmis.dao.impl.AwokeTaskDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 代办任务end -->
+	
+	<!-- 考勤start -->
+	<bean id="attendanceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.AttendanceServiceImpl">
+			    <property name="attendanceDAO"><ref bean="attendanceDAO"/></property>
+			    <property name="recordDAO"><ref bean="recordDAO"/></property>
+			    <property name="personnelDAO"><ref bean="ipersonnelDao"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="attendanceDAO" class="com.zc13.bkmis.dao.impl.AttendanceDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<bean id="recordDAO" class="com.zc13.bkmis.dao.impl.RecordDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 考勤end -->
+	
+	<!-- 短信start -->
+	<bean id="SMSService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.SMSServiceImpl">
+			    <property name="SMSDAO"><ref bean="SMSDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="SMSDAO" class="com.zc13.bkmis.dao.impl.SMSDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 短信end -->
+	
+	<!-- 电话计费start -->
+	<bean id="phoneCostService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.PhoneCostServiceImpl">
+			    <property name="phoneCostDAO"><ref bean="phoneCostDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="phoneCostDAO" class="com.zc13.bkmis.dao.impl.PhoneCostDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 电话计费end -->
+	
+	<!-- 发票管理start -->
+	<bean id="invoiceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.InvoiceServiceImpl">
+			    <property name="invoiceDAO"><ref bean="invoiceDAO"/></property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="invoiceDAO" class="com.zc13.bkmis.dao.impl.InvoiceDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 发票管理end -->
+	
+	<!-- 快捷操作start -->
+	<bean id="shortcutsService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.ShortcutsServiceImpl">
+			    <property name="shortcutsDAO"><ref bean="shortcutsDAO"/></property>
+			    <property name="costTransactDAO"><ref bean="costTransactDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="shortcutsDAO" class="com.zc13.bkmis.dao.impl.ShortcutsDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<!-- 快捷操作end -->
+</beans>

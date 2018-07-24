@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+   <form-beans>
+  		<form-bean name="repairResultForm" dynamic="true" type="com.zc13.bkmis.form.RepairResultForm"></form-bean>
+        <form-bean name="merchantsPlanForm" dynamic="true" type="com.zc13.bkmis.form.MerchantsPlanForm"></form-bean>
+        <form-bean name="financialBudgetForm" dynamic="true" type="com.zc13.bkmis.form.FinancialBudgetForm"></form-bean>
+        <form-bean name="financialActualForm" dynamic="true" type="com.zc13.bkmis.form.FinancialActualForm"></form-bean>
+        <form-bean name="finForm" dynamic="true" type="com.zc13.bkmis.form.FinForm"></form-bean>
+        <form-bean name="trackRecordForm" dynamic="true" type="com.zc13.bkmis.form.TrackRecordForm"></form-bean>
+ 		<!-- 修改部分1 开始-->
+        <form-bean name="merchantsActualForm" dynamic="true" type="com.zc13.bkmis.form.MerchantsActualForm"></form-bean>
+        <form-bean name="merForm" dynamic="true" type="com.zc13.bkmis.form.MerForm"></form-bean>
+        <!-- 修改部分1 结束-->
+        <!-- 财务报表-form -->
+        <form-bean name="financialReportForm" dynamic="true" type="com.zc13.bkmis.form.FinancialReportForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  
+  	<action path="/RepairResult" name="repairResultForm" parameter="method" type="com.zc13.bkmis.action.RepairResultAction" scope="request">
+	  	<forward name="repairResultList" path="/zc13/bkmis/repairResult/repairsResultList.jsp"></forward>
+	  	<forward name="edit" path="/zc13/bkmis/repairResult/editRepairsResult.jsp"></forward> 
+	  	<forward name="repairResultRadioList" path="/zc13/bkmis/repairResult/dealRepairsResult.jsp"></forward> 
+  	</action>
+  	
+  	
+  	<action path="/merchantsPlan" name="merchantsPlanForm" parameter="method" type="com.zc13.bkmis.action.MerchantsPlanAction" scope="request">
+	  	<forward name="list" path="/zc13/bkmis/merchantsPlan/merchantsPlanList.jsp"></forward>
+	  	<forward name="edit" path="/zc13/bkmis/merchantsPlan/editMerchantsPlan.jsp"></forward> 
+	  	<forward name="add" path="/zc13/bkmis/merchantsPlan/addMerchantsPlan.jsp"></forward> 
+  	</action>
+  	
+  	
+  	<action path="/financialBudget" name="financialBudgetForm" parameter="method" type="com.zc13.bkmis.action.FinancialBudgetAction" scope="request">
+	  	<forward name="list" path="/zc13/bkmis/financialBudget/finList.jsp"></forward>
+	  	<forward name="edit" path="/zc13/bkmis/financialBudget/editfin.jsp"></forward> 
+  	</action>
+  
+  
+  	<action path="/financialActual" name="financialActualForm" parameter="method" type="com.zc13.bkmis.action.FinancialActualAction" scope="request">
+	  	<forward name="list" path="/zc13/bkmis/financialActual/finList.jsp"></forward>
+	  	<forward name="edit" path="/zc13/bkmis/financialActual/editfin.jsp"></forward>
+  	</action>
+  
+  
+    <action path="/financialAandB" parameter="method" type="com.zc13.bkmis.action.FinancialAandBAction" name="finForm" scope="request">
+  		<forward name="list" path="/zc13/bkmis/financialActual/finAandBList.jsp"></forward>
+  	</action>
+  
+  	<!-- 客户跟踪 -->
+  	<action path="/trackRecord" parameter="method" type="com.zc13.bkmis.action.TrackRecordAction" name="trackRecordForm" scope="request">
+  		<forward name="list" path="/zc13/bkmis/trackRecord/trackRecordList.jsp"></forward>
+  		<forward name="goAddOrEdit" path="/zc13/bkmis/trackRecord/addOrUpdate.jsp"></forward>
+  	</action>
+  	
+  	<!-- 修改部分2 开始-->
+  	<action path="/merchantsActual" name="merchantsActualForm" parameter="method" type="com.zc13.bkmis.action.MerchantsActualAction" scope="request">
+	  	<forward name="list" path="/zc13/bkmis/merchantsActual/merchantsActualList.jsp"></forward>
+	  	<forward name="edit" path="/zc13/bkmis/merchantsActual/editMerchantsActual.jsp"></forward> 
+	  	<forward name="add" path="/zc13/bkmis/merchantsActual/addMerchantsActual.jsp"></forward> 
+  	</action>
+  	
+  	<action path="/merchantsAandP" name="merForm" parameter="method" type="com.zc13.bkmis.action.MerchantsAandPAction" scope="request">
+	  	<forward name="list" path="/zc13/bkmis/merchantsActual/merAandPList.jsp"></forward>
+  	</action>
+    <!-- 修改部分2 结束-->
+    
+    <!-- 财务报表13-05-13 -->
+    <action path="/financialReport" name="financialReportForm" parameter="method" type="com.zc13.bkmis.action.FinancialReportAction" scope="request">
+	  	<forward name="list" path="/zc13/bkmis/finacialReport/operate_cost_list.jsp"></forward>
+	  	<forward name="addOrEdit" path="/zc13/bkmis/finacialReport/addOrUpdate.jsp"></forward>
+	  	<forward name="incomeList" path="/zc13/bkmis/finacialReport/operate_income_list.jsp"></forward>
+	  	<forward name="addOrEditIncome" path="/zc13/bkmis/finacialReport/addOrUpdateIncome.jsp"></forward>
+	  	<forward name="projectList" path="/zc13/bkmis/finacialReport/project_cost_list.jsp"></forward>
+	  	<forward name="addOrEditProject" path="/zc13/bkmis/finacialReport/addOrUpdateProject.jsp"></forward>
+	  	<forward name="queryShow" path="/zc13/bkmis/finacialReport/queryShow.jsp"></forward>
+  	</action>
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

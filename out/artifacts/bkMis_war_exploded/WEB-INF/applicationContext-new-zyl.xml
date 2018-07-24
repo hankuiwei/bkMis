@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 合同预算 -->
+	<bean id="calculateService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CalculateMoneyServiceImpl">
+			    <property name="calculateDAO"><ref bean="calculateDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="calculateDAO" class="com.zc13.bkmis.dao.impl.CalculateMoneyDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+</beans>

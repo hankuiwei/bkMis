@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/role.do" location="891,981" dimension="274,84" />
+  <StrutsActivity path="/lp.do" location="803,357" dimension="262,84" />
+  <StrutsActivity path="/build.do" location="730,684" dimension="286,84" />
+  <StrutsActivity path="/room.do" location="1331,0" dimension="274,84" />
+  <StrutsActivity path="/zc13/msmis/roleManage/rolePrem.jsp" location="0,1185" dimension="250,48" />
+  <StrutsActivity path="/zc13/msmis/roleManage/modifyRole.jsp" location="350,1185" dimension="262,48" />
+  <StrutsActivity path="/zc13/msmis/roleManage/roleuserperm.jsp" location="712,1185" dimension="274,48" />
+  <StrutsActivity path="/zc13/msmis/roleManage/addRole.jsp" location="1086,1185" dimension="244,48" />
+  <StrutsActivity path="/zc13/msmis/roleManage/roleListPage.jsp" location="1430,1185" dimension="274,48" />
+  <StrutsActivity path="/zc13/msmis/roleManage/setTips.jsp" location="1804,1185" dimension="244,48" />
+  <StrutsActivity path="/zc13/bkmis/lpManage/e_lplist.jsp" location="0,591" dimension="238,48" />
+  <StrutsActivity path="/zc13/bkmis/lpManage/addBj.jsp" location="338,591" dimension="220,48" />
+  <StrutsActivity path="/zc13/bkmis/lpManage/editLp.jsp" location="658,591" dimension="226,48" />
+  <StrutsActivity path="/zc13/bkmis/lpManage/lookLp.jsp" location="984,591" dimension="226,48" />
+  <StrutsActivity path="/zc13/bkmis/lpManage/modifyLp.jsp" location="1310,591" dimension="238,48" />
+  <StrutsActivity path="/zc13/bkmis/lpManage/addLp.jsp" location="1648,591" dimension="220,48" />
+  <StrutsActivity path="/zc13/bkmis/buildsManage/addBj.jsp" location="0,888" dimension="244,48" />
+  <StrutsActivity path="/zc13/bkmis/buildsManage/e_buildslist.jsp" location="344,888" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/buildsManage/modifyBuilds.jsp" location="730,888" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/buildsManage/getRoomClientInfo.jsp" location="1116,888" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/buildsManage/addBuilds.jsp" location="1532,888" dimension="268,48" />
+  <StrutsActivity path="/zc13/bkmis/buildsManage/floorPlan.jsp" location="1900,888" dimension="268,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/historyClientInfo.jsp" location="0,264" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/addBj.jsp" location="404,264" dimension="232,48" />
+  <StrutsActivity path="/treeFram.jsp" location="736,264" dimension="118,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/e_roomlist.jsp" location="954,264" dimension="262,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/batchIncreaseRoom.jsp" location="1316,264" dimension="304,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/roomManagelist.jsp" location="1720,264" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/roomInfo.jsp" location="2106,264" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/modifyRoom.jsp" location="2456,264" dimension="262,48" />
+  <StrutsActivity path="/zc13/bkmis/roomManage/addRoom.jsp" location="2818,264" dimension="244,48" />
+  <StrutsTransition id="/room.do,roomInfo,/zc13/bkmis/roomManage/roomInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1542,84" />
+      <AbsolutePoint location="1542,174" />
+      <AbsolutePoint location="2231,174" />
+      <AbsolutePoint location="2231,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,upload,/zc13/bkmis/lpManage/modifyLp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1015,441" />
+      <AbsolutePoint location="1015,501" />
+      <AbsolutePoint location="1488,501" />
+      <AbsolutePoint location="1488,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,bj,/zc13/bkmis/buildsManage/addBj.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="750,768" />
+      <AbsolutePoint location="750,798" />
+      <AbsolutePoint location="122,798" />
+      <AbsolutePoint location="122,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,add,/zc13/bkmis/roomManage/addRoom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1592,84" />
+      <AbsolutePoint location="1592,114" />
+      <AbsolutePoint location="2940,114" />
+      <AbsolutePoint location="2940,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,add,/zc13/msmis/roleManage/addRole.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1051,1065" />
+      <AbsolutePoint location="1051,1155" />
+      <AbsolutePoint location="1208,1155" />
+      <AbsolutePoint location="1208,1185" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,batch,/zc13/bkmis/roomManage/batchIncreaseRoom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1468,84" />
+      <AbsolutePoint location="1468,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,buildsList,/zc13/bkmis/buildsManage/e_buildslist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="832,768" />
+      <AbsolutePoint location="832,858" />
+      <AbsolutePoint location="558,858" />
+      <AbsolutePoint location="558,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,add,/zc13/bkmis/lpManage/addLp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1048,441" />
+      <AbsolutePoint location="1048,471" />
+      <AbsolutePoint location="1758,471" />
+      <AbsolutePoint location="1758,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,tree,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1393,84" />
+      <AbsolutePoint location="1393,174" />
+      <AbsolutePoint location="795,174" />
+      <AbsolutePoint location="795,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,roomplan,/zc13/bkmis/buildsManage/getRoomClientInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="913,768" />
+      <AbsolutePoint location="913,858" />
+      <AbsolutePoint location="1274,858" />
+      <AbsolutePoint location="1274,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,lpinfo,/zc13/bkmis/lpManage/e_lplist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="819,441" />
+      <AbsolutePoint location="819,471" />
+      <AbsolutePoint location="59,471" />
+      <AbsolutePoint location="59,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,aroomList,/zc13/bkmis/roomManage/e_roomlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1443,84" />
+      <AbsolutePoint location="1443,234" />
+      <AbsolutePoint location="1150,234" />
+      <AbsolutePoint location="1150,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,roleuserperm,/zc13/msmis/roleManage/roleuserperm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1005,1065" />
+      <AbsolutePoint location="1005,1155" />
+      <AbsolutePoint location="849,1155" />
+      <AbsolutePoint location="849,1185" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,looklp,/zc13/bkmis/lpManage/lookLp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,441" />
+      <AbsolutePoint location="950,561" />
+      <AbsolutePoint location="1097,561" />
+      <AbsolutePoint location="1097,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,editlp,/zc13/bkmis/lpManage/editLp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="917,441" />
+      <AbsolutePoint location="917,561" />
+      <AbsolutePoint location="771,561" />
+      <AbsolutePoint location="771,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,manage,/zc13/bkmis/roomManage/roomManagelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1517,84" />
+      <AbsolutePoint location="1517,204" />
+      <AbsolutePoint location="1934,204" />
+      <AbsolutePoint location="1934,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,add,/zc13/bkmis/buildsManage/addBuilds.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="954,768" />
+      <AbsolutePoint location="954,828" />
+      <AbsolutePoint location="1666,828" />
+      <AbsolutePoint location="1666,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,success,/zc13/msmis/roleManage/roleListPage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1097,1065" />
+      <AbsolutePoint location="1097,1125" />
+      <AbsolutePoint location="1567,1125" />
+      <AbsolutePoint location="1567,1185" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,permissions,/zc13/msmis/roleManage/rolePrem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="914,1065" />
+      <AbsolutePoint location="914,1095" />
+      <AbsolutePoint location="125,1095" />
+      <AbsolutePoint location="125,1185" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,buildsBylLpname,/zc13/bkmis/buildsManage/e_buildslist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="791,768" />
+      <AbsolutePoint location="791,828" />
+      <AbsolutePoint location="415,828" />
+      <AbsolutePoint location="415,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,bj,/zc13/bkmis/lpManage/addBj.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="884,441" />
+      <AbsolutePoint location="884,531" />
+      <AbsolutePoint location="448,531" />
+      <AbsolutePoint location="448,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,modify,/zc13/msmis/roleManage/modifyRole.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="960,1065" />
+      <AbsolutePoint location="960,1125" />
+      <AbsolutePoint location="481,1125" />
+      <AbsolutePoint location="481,1185" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,floorPlan,/zc13/bkmis/buildsManage/floorPlan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="995,768" />
+      <AbsolutePoint location="995,798" />
+      <AbsolutePoint location="2034,798" />
+      <AbsolutePoint location="2034,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,modify,/zc13/bkmis/lpManage/modifyLp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="983,441" />
+      <AbsolutePoint location="983,531" />
+      <AbsolutePoint location="1369,531" />
+      <AbsolutePoint location="1369,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lp.do,lpList,/zc13/bkmis/lpManage/e_lplist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="852,441" />
+      <AbsolutePoint location="852,501" />
+      <AbsolutePoint location="178,501" />
+      <AbsolutePoint location="178,591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/build.do,modify,/zc13/bkmis/buildsManage/modifyBuilds.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="873,768" />
+      <AbsolutePoint location="873,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,bj,/zc13/bkmis/roomManage/addBj.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1368,84" />
+      <AbsolutePoint location="1368,144" />
+      <AbsolutePoint location="520,144" />
+      <AbsolutePoint location="520,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,roomList,/zc13/bkmis/roomManage/roomManagelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1492,84" />
+      <AbsolutePoint location="1492,234" />
+      <AbsolutePoint location="1791,234" />
+      <AbsolutePoint location="1791,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/role.do,tip,/zc13/msmis/roleManage/setTips.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1142,1065" />
+      <AbsolutePoint location="1142,1095" />
+      <AbsolutePoint location="1926,1095" />
+      <AbsolutePoint location="1926,1185" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,bylp,/zc13/bkmis/roomManage/e_roomlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1418,84" />
+      <AbsolutePoint location="1418,204" />
+      <AbsolutePoint location="1019,204" />
+      <AbsolutePoint location="1019,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,modify,/zc13/bkmis/roomManage/modifyRoom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1567,84" />
+      <AbsolutePoint location="1567,144" />
+      <AbsolutePoint location="2587,144" />
+      <AbsolutePoint location="2587,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/room.do,history,/zc13/bkmis/roomManage/historyClientInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1343,84" />
+      <AbsolutePoint location="1343,114" />
+      <AbsolutePoint location="152,114" />
+      <AbsolutePoint location="152,264" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

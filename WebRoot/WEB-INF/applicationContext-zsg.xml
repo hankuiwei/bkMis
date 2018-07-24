@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 收费项目 -->
+	<bean id="icItemsService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CItemsServiceImpl">
+			    <property name="icItemsDao"><ref bean="icItemsDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="icItemsDao" class="com.zc13.bkmis.dao.impl.CItemsDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	<!-- <description>收费帐套</description> -->
+	<bean id="icAccounttemplateService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CAccounttemplateServiceImpl">
+			    <property name="icAccounttemplateDao"><ref bean="icAccounttemplateDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="icAccounttemplateDao" class="com.zc13.bkmis.dao.impl.CAccounttemplateDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	<!-- <description>收费标准</description>  -->
+	<bean id="icCoststandardService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CCoststandardServiceImpl">
+			    <property name="icCoststandardDao"><ref bean="icCoststandardDao"/></property>
+			    <property name="icItemsDao"><ref bean="icItemsDao"/></property>
+			    <property name="icAccounttemplateDao"><ref bean="icAccounttemplateDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="icCoststandardDao" class="com.zc13.bkmis.dao.impl.CCoststandardDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	<!-- <description>收费选择</description> -->
+	<bean id="icChoiceService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CChoiceServiceImpl">
+			    <property name="icChoiceDao"><ref bean="icChoiceDao"/></property>
+			    <property name="costTransactService"><ref bean="costTransactService"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="icChoiceDao" class="com.zc13.bkmis.dao.impl.CChoiceDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	<!-- <description>账单-应收账款-收款销账</description> -->
+	<bean id="icBillService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CBillServiceImpl">
+			    <property name="icBillDao"><ref bean="icBillDao"/></property>
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="icBillDao" class="com.zc13.bkmis.dao.impl.CBillDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+	<!-- 通知单 -->
+	<bean id="icNoticeService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.CNoticeServiceImpl">
+			    <property name="icNoticeDAO"><ref bean="icNoticeDAO"/></property>
+			    <property name="icItemsDao"><ref bean="icItemsDao"/></property>
+			    <property name="icBillDao"><ref bean="icBillDao"/></property>
+			    <property name="icostTransactDAO"><ref bean="costTransactDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="costTransactDAO" class="com.zc13.bkmis.dao.impl.CostTransactDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+	<bean id="icNoticeDAO" class="com.zc13.bkmis.dao.impl.CNoticeDAOImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>	
+</beans>

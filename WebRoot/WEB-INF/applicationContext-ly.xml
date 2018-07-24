@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+   <!-- 客户报修内容 -->
+	<bean id="irepairResultService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.RepairResultServiceImpl">
+				<property name="irepairResultDao" ref="irepairResultDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="irepairResultDao" class="com.zc13.bkmis.dao.impl.RepairResultDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 招商计划 -->
+	<bean id="imerchantsPlanService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.MerchantsPlanServiceImpl">
+				<property name="imerchantsPlanDao" ref="imerchantsPlanDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="imerchantsPlanDao" class="com.zc13.bkmis.dao.impl.MerchantsPlanDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	<!-- 修改4 开始 -->
+	<!-- 招商实际 -->
+	<bean id="imerchantsActualService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.MerchantsActualServiceImpl">
+				<property name="imerchantsActualDao" ref="imerchantsActualDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="imerchantsActualDao" class="com.zc13.bkmis.dao.impl.MerchantsActualDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	<!-- 招商预算与实际对比 -->
+	<bean id="imerchantsAandPService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.MerchantsAandPServiceImpl">
+				<property name="imerchantsAandPDao" ref="imerchantsAandPDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="imerchantsAandPDao" class="com.zc13.bkmis.dao.impl.MerchantsAandPDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 修改4 结束 -->
+	
+	<!-- 财务预算 -->
+	<bean id="ifinancialBudgetService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.FinancialBudgetServiceImpl">
+				<property name="ifinancialBudgetDao" ref="ifinancialBudgetDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="ifinancialBudgetDao" class="com.zc13.bkmis.dao.impl.FinancialBudgetDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 财务预算 -->
+	<bean id="ifinancialActualService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.FinancialActualServiceImpl">
+				<property name="ifinancialActualDao" ref="ifinancialActualDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="ifinancialActualDao" class="com.zc13.bkmis.dao.impl.FinancialActualDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 财务预算与实际对比 -->
+	<bean id="ifinancialAandBService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.FinancialAandBServiceImpl">
+				<property name="ifinancialAandBDao" ref="ifinancialAandBDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="ifinancialAandBDao" class="com.zc13.bkmis.dao.impl.FinancialAandBDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 客户跟踪 -->
+	<bean id="trackRecordService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.TrackRecordServiceImpl">
+				<property name="trackRecordDao" ref="trackRecordDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="trackRecordDao" class="com.zc13.bkmis.dao.impl.TrackRecordDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 财务报表-经营成本 -->
+	<bean id="financialReportService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.FinancialReportServiceImpl">
+				<property name="financialReportDao" ref="financialReportDao"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="financialReportDao" class="com.zc13.bkmis.dao.impl.FinancialReportDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>

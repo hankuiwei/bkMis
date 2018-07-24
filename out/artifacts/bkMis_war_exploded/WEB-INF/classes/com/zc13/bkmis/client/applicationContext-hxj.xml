@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <!-- role的相关注入 -->
+	<bean id="iroleManageService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.msmis.service.impl.RoleManageServiceImpl">
+			    <property name="iroleManageDao" ref="iroleManageDao"/>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="iroleManageDao" class="com.zc13.msmis.dao.impl.RoleManageDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>	
+	<!-- lp的相关注入 -->
+	<bean id="ilpManageService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.LpManageServiceImpl">
+			    <property name="ilpManageDao" ref="ilpManageDao"/>
+			    <property name="imeterManageDao" ref="imeterManageDao"/>
+			    <property name="ISysParamManagerDAO"><ref bean="ISysParamManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="ilpManageDao" class="com.zc13.bkmis.dao.impl.LpManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>	
+	<!-- Builds的相关注入 -->
+	<bean id="ibuildsManageService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.BuildsManageServiceImpl">
+			    <property name="ibuildsManageDao" ref="ibuildsManageDao"/>
+			    <property name="imeterManageDao" ref="imeterManageDao"/>
+			    <property name="ISysParamManagerDAO"><ref bean="ISysParamManagerDAO"/></property>
+			    <property name="iroomManageDao" ref="iroomManageDao"/>
+			</bean>
+		</property>
+	</bean>
+	<!-- 楼栋的注入 -->	
+	<bean id="ibuildsManageDao" class="com.zc13.bkmis.dao.impl.BuildsManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 表具的dao注入 -->
+	<bean id="imeterManageDao" class="com.zc13.bkmis.dao.impl.MeterManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>		
+	<!-- Room的相关注入 -->
+	<bean id="iroomManageService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.zc13.bkmis.service.impl.RoomManageServiceImpl">
+			    <property name="iroomManageDao" ref="iroomManageDao"/>
+			    <property name="imeterManageDao" ref="imeterManageDao"/>
+			    <property name="ISysParamManagerDAO"><ref bean="ISysParamManagerDAO"/></property>
+			</bean>
+		</property>
+	</bean>	
+	<bean id="iroomManageDao" class="com.zc13.bkmis.dao.impl.RoomManageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>	
+</beans>

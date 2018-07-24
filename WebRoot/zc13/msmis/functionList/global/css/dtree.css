@@ -1,0 +1,117 @@
+
+body {
+		margin:0px;
+		padding:0px;
+}
+
+a{				
+	color: #FFFFFF;
+	text-decoration: none 
+}
+
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	background:#FFFFFF;
+	margin-left:50px;
+	padding-bottom:20px;
+}
+
+.dtree_button{
+	height:20px;
+	margin-top:30px;
+	margin-left:50px;
+	
+	}
+	
+.buttonBg{
+	color:#FFF;
+	font-size:14px;
+	padding-left:10px;
+	padding-right:10px;
+	cursor:pointer;
+	float:left;
+	width:auto;
+	height:26px;
+	margin-left:10px;
+	text-align:center;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 634px 92px;
+}
+
+.buttonBg:hover{
+	width:auto;
+	height:26px;
+	background-image:url(../images/CCTV_AD_UI_IMG.jpg);
+	background-position: 634px 64px;
+}
+.buttonBg div{
+	margin-top:3px;
+	
+	}
+
+.dtree p{
+	padding-top:10px;
+	padding-left:10px;
+
+}
+
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.dtree .clip {
+	overflow: hidden;
+}
+
+
+
+
+/*********************New Add*************************/
+
+.material{
+	margin:10px;
+	width:100%;
+	height:auto;
+	/*background-color:#FFF*/
+}
+
+.material_1_body{
+	overflow:hidden;
+	width:100%;
+	height:auto;
+	background-image:url(../images/material_1_body_bg.jpg);
+}
+
+.material_1_body_Urllist{
+	overflow:hidden;
+	width:100%;
+	height:auto;
+
+}
+
+
+
+.material_main{
+
+	overflow: hidden;
+	width:95%;
+	height:100%;
+}

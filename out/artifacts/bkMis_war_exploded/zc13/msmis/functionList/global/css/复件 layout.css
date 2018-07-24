@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+html, body {
+	height:100%;
+	overflow: auto;
+	SCROLLBAR-FACE-COLOR: #3b69af;
+	SCROLLBAR-HIGHLIGHT-COLOR: ;    
+	SCROLLBAR-SHADOW-COLOR: #efefef;
+	SCROLLBAR-3DLIGHT-COLOR: #999999;
+	SCROLLBAR-ARROW-COLOR: #7D99CA;
+	SCROLLBAR-TRACK-COLOR: ; 
+	SCROLLBAR-DARKSHADOW-COLOR: #CCCCCC;
+}
+html>body {   /*-- for !IE6.0 --*/
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 10px;
+	bottom: 0px;
+}
+body {
+	border:0px;
+	background-color: #3f4044;
+}
+
+#mainDiv {
+ width: 100%;
+ height: 98%;
+ _padding-left:225px;
+}
+#rightDiv {
+ width: 100%;
+ height: 100%;
+ _padding-top:70px;
+ _padding-bottom:30px;
+}
+
+#mainDiv>#rightDiv {
+ width:auto;
+ position:absolute;
+ left:225px;
+ right:0px;
+}
+#leftDiv {
+ width:225px;
+ height:100%;
+ position:absolute;
+ top:0px;
+ left:0px;
+}
+#centerDiv {
+ width: 100%;
+ height: 100%;
+}
+#rightDiv>#centerDiv {
+ height:auto;
+ position:absolute;
+ top:70px;
+ bottom:30px;
+}
+
+#topDiv {
+ height:70px;
+ width:100%;
+ position:absolute;
+ top:0px;
+}
+ 
+#bottomDiv {
+ height:30px;
+ width:100%;
+ position:absolute;
+ bottom:0px;
+ _bottom:-1px; /*-- for IE6.0 --*/
+}
+
+#frmSearch {
+	float:left;
+	height:auto;
+ 	width:100%;
+	_bottom:-1px; /*-- for IE6.0 --*/
+}
+
+#frmSearch #search_advanced table{
+	color:#FFF;
+	font-size:13px;
+}

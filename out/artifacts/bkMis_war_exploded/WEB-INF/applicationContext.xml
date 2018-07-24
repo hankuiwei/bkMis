@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<!-- SpringContextHolder -->
+	<bean id="SpringContextHolder" class="com.zc13.util.SpringContextHolder" lazy-init="false" />
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>
+		<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=bkMis"></property>
+		<property name="username" value="sa"></property>
+		<!-- <property name="password" value="beikong@123"></property> -->
+		<property name="password" value="123456"></property>
+		
+		 <!-- 
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://192.168.0.107:3306/bkmis"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+		-->
+		<!-- 连接池启动时的初始值 -->
+      	<property name="initialSize" value="1" />
+      	<!-- 连接池的最大值 -->
+      	<property name="maxActive" value="500" />
+      	<!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 -->
+     	<property name="maxIdle" value="2" />
+      	<!--  最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请一些连接，以避免洪峰来时再申请而造成的性能开销 -->
+      	<property name="minIdle" value="1" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">com.zc13.util.JacSQLServerDialect</prop>
+				<!--
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				-->
+				<!-- 显示hql语句 -->
+				<prop key="hibernate.show_sql">true</prop>
+				<!-- 格式化sql -->  
+       			<prop key="hibernate.format_sql">true</prop>    
+       			 <!-- 自动化更新表结构 -->
+       			 <prop key="hibernate.hbm2ddl.auto">update</prop>  
+				<!-- 配置spring二级缓存 -->
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+          		<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+       			 
+			</props>
+		</property>
+
+		<property name="mappingResources">
+			<list>
+				<value>com/zc13/msmis/mapping/MRolePerm.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/MUser.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/MUserRole.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/MRole.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/MFunction.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/EBuilds.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ELp.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ERooms.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/SysCodeType.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/SysCode.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/HrPersonnel.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/HrPact.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/SysLog.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ViewTreeCode.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ViewBuild.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CCoststandard.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CItems.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CCostparatype.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CAccounttemplate.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/HrFile.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CCosttype.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/EFloorMap.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/HrExteriorPersonnel.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/EMeter.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/SerMaintainProject.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/EMeterExcerption.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotMaterialType.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotMaterial.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/SerClientMaintain.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactRoomCoststandard.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactClient.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/Compact.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AllMeterType.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotInputManager.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotOutputManager.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotSupplier.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotInOutputList.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/SerMaterialConsume.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactRoom.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/SerClientComplaint.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ERoomFixture.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CBill.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ERoomClient.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactRent.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotAdjustAccounts.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/DepotMaterialCopy.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactRelet.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactQuit.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CAdvanceDetail.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CAdvance.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CAdvanceWuYF.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CAdvanceWuYFDetail.hbm.xml</value>
+				
+				<value>com/zc13/bkmis/mapping/CTemporal.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AnalysisCustomer.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AnalysisClientComeGo.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CBuildBillsLog.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AwokeTaskRole.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AwokeTask.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CRefund.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AnalysisCost.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CDeposit.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/AnalysisEnergy.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CNotice.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactChange.hbm.xml</value>
+				<value>com/zc13/msmis/mapping/LimitCar.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/EFloorMapCoordinate.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CCharge.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactQuitBill.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CEarnest.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CompactTask.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/SysSequence.hbm.xml</value>
+				<value>
+					com/zc13/bkmis/mapping/CompactIntention.hbm.xml
+				</value>
+				<value>
+					com/zc13/bkmis/mapping/IntentionRoomCoststandard.hbm.xml
+				</value>
+				<value>
+					com/zc13/bkmis/mapping/ERoomIntention.hbm.xml
+				</value>
+				<value>
+					com/zc13/bkmis/mapping/IntentionRent.hbm.xml
+				</value>
+				<value>com/zc13/bkmis/mapping/HrRecord.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/TEventLog.hbm.xml</value>
+				<value>
+					com/zc13/bkmis/mapping/TSentRecord.hbm.xml
+				</value>
+				<value>com/zc13/bkmis/mapping/TRecRecord.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/TSendTask.hbm.xml</value>
+				<value>
+					com/zc13/bkmis/mapping/EMaintainDispatch.hbm.xml
+				</value>
+				<value>com/zc13/bkmis/mapping/ECallInfo.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/ECallInfoLog.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CServiceProvider.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CPhoneParameter.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CRegionCode.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CInvoice.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CInvoiceReceipt.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/CInvoiceBill.hbm.xml</value>
+				<!-- 计算合同预算 -->
+				<value>com/zc13/bkmis/mapping/CalculateMoney.hbm.xml</value>
+				<!-- 处理客户报修维修内容 -->
+				<value>com/zc13/bkmis/mapping/RepairResult.hbm.xml</value>
+				<!-- 招商计划 -->
+				<value>com/zc13/bkmis/mapping/MerchantsPlan.hbm.xml</value>
+				<!-- 财务预算 -->
+				<value>com/zc13/bkmis/mapping/FinancialBudget.hbm.xml</value>
+				<!-- 实际财务 -->
+				<value>com/zc13/bkmis/mapping/FinancialActual.hbm.xml</value>
+				<!-- 客户跟踪 -->
+				<value>com/zc13/bkmis/mapping/TrackRecord.hbm.xml</value>
+				<value>com/zc13/bkmis/mapping/MerchantsActual.hbm.xml</value>
+				<!-- 经营成本维护 -->
+				<value>com/zc13/bkmis/mapping/OperateCost.hbm.xml</value>
+				<!-- 经营收入维护 -->
+				<value>com/zc13/bkmis/mapping/OperateIncome.hbm.xml</value>
+				<!-- 项目维护 -->
+				<value>com/zc13/bkmis/mapping/ProjectCosts.hbm.xml</value>
+				</list>
+		</property>
+		
+	</bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="dataSource"/>
+        </property>
+    </bean>
+	
+		<!-- Transaction manager for a single Hibernate SessionFactory (alternative to JTA) -->
+	<bean id="myTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+				<!-- 事务管理 -->
+	<bean id="txProxyTemplate" abstract="true" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="myTransactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="find*">PROPAGATION_REQUIRED,readOnly,-Exception</prop>
+				<prop key="*">PROPAGATION_REQUIRED,-Exception</prop>
+			</props>
+		</property>
+	</bean>
+	</beans>

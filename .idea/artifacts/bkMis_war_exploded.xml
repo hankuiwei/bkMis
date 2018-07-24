@@ -1,0 +1,111 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="bkMis:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/bkMis_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bkMis" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="antlr-2.7.6rc1.jar" module-name="bkMis" />
+          <element id="library" level="module" name="aopalliance.jar" module-name="bkMis" />
+          <element id="library" level="module" name="asm-2.2.3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="asm-commons-2.2.3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="asm-util-2.2.3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="aspectjrt.jar" module-name="bkMis" />
+          <element id="library" level="module" name="aspectjweaver.jar" module-name="bkMis" />
+          <element id="library" level="module" name="c3p0-0.9.1.1.jar" module-name="bkMis" />
+          <element id="library" level="module" name="cglib-nodep-2.1_3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-attributes-api.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-attributes-compiler.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-beanutils-1.7.0.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-codec.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-collections-3.1.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-dbcp.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-fileupload.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-httpclient.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-io.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-lang.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-logging.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-pool.jar" module-name="bkMis" />
+          <element id="library" level="module" name="concurrent-1.3.2.jar" module-name="bkMis" />
+          <element id="library" level="module" name="connector.jar" module-name="bkMis" />
+          <element id="library" level="module" name="cos.jar" module-name="bkMis" />
+          <element id="library" level="module" name="dom4j-1.6.1.jar" module-name="bkMis" />
+          <element id="library" level="module" name="easymock.jar" module-name="bkMis" />
+          <element id="library" level="module" name="easymockclassextension.jar" module-name="bkMis" />
+          <element id="library" level="module" name="ehcache-1.1.jar" module-name="bkMis" />
+          <element id="library" level="module" name="ezmorph-1.0.4.jar" module-name="bkMis" />
+          <element id="library" level="module" name="freemarker.jar" module-name="bkMis" />
+          <element id="library" level="module" name="hanvon_face.jar" module-name="bkMis" />
+          <element id="library" level="module" name="hibernate3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="iText-2.1.5.jar" module-name="bkMis" />
+          <element id="library" level="module" name="iTextAsian.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jaas.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jacc-1_0-fr.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jakarta-oro-2.0.8.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jasperreports-3.0.0.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jaxen-1.1-beta-7.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jboss-cache.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jboss-common.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jboss-jmx.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jboss-system.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jcifs-1.3.2.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jcommon-1.0.16.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jdbc2_0-stdext.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jfreechart-1.0.13.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jfreechart-1.0.13-experimental.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jfreechart-1.0.13-swt.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jgroups-2.2.8.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jotm.jar" module-name="bkMis" />
+          <element id="library" level="module" name="json-lib-2.3-jdk15.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jstl.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jta.jar" module-name="bkMis" />
+          <element id="library" level="module" name="junit.jar" module-name="bkMis" />
+          <element id="library" level="module" name="jxl.jar" module-name="bkMis" />
+          <element id="library" level="module" name="log4j-1.2.14.jar" module-name="bkMis" />
+          <element id="library" level="module" name="mysql-connector-java-5.0.5-bin.jar" module-name="bkMis" />
+          <element id="library" level="module" name="oscache-2.1.jar" module-name="bkMis" />
+          <element id="library" level="module" name="persistence.jar" module-name="bkMis" />
+          <element id="library" level="module" name="poi-3.0-rc4-20070503.jar" module-name="bkMis" />
+          <element id="library" level="module" name="portlet-api.jar" module-name="bkMis" />
+          <element id="library" level="module" name="proxool-0.8.3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-agent.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-aop.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-beans.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-context.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-core.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-dao.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-hibernate3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-ibatis.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-jdbc.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-jdo.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-jpa.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-mock.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-portlet.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-remoting.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-struts.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-support.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-tomcat-weaver.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-toplink.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-web.jar" module-name="bkMis" />
+          <element id="library" level="module" name="spring-webmvc.jar" module-name="bkMis" />
+          <element id="library" level="module" name="sqljdbc4.jar" module-name="bkMis" />
+          <element id="library" level="module" name="standard.jar" module-name="bkMis" />
+          <element id="library" level="module" name="struts.jar" module-name="bkMis" />
+          <element id="library" level="module" name="struts-el-1.3.8.jar" module-name="bkMis" />
+          <element id="library" level="module" name="struts-taglib-1.3.8.jar" module-name="bkMis" />
+          <element id="library" level="module" name="swarmcache-1.0rc2.jar" module-name="bkMis" />
+          <element id="library" level="module" name="swtgraphics2d.jar" module-name="bkMis" />
+          <element id="library" level="module" name="velocity-1.5.jar" module-name="bkMis" />
+          <element id="library" level="module" name="velocity-tools-view-1.3.jar" module-name="bkMis" />
+          <element id="library" level="module" name="xapool.jar" module-name="bkMis" />
+          <element id="library" level="module" name="xerces-2.6.2.jar" module-name="bkMis" />
+          <element id="library" level="module" name="xml-apis.jar" module-name="bkMis" />
+          <element id="library" level="module" name="commons-digester-1.8.jar" module-name="bkMis" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="bkMis/web/Web" />
+    </root>
+  </artifact>
+</component>

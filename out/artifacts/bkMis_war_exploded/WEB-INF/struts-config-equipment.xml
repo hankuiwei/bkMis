@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  		<form-bean name="equipmentForm" dynamic="true" type="com.zc13.bkmis.form.EquipmentForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  	
+  	<!-- 设备类型 -->
+  	<action path="/equp"
+  			name="equipmentForm"
+  			parameter="method"
+  			scope="request"
+  			type="com.zc13.bkmis.action.EquipmentAction"
+  	>
+  		<forward name="typeList" path="/treeFram.jsp" redirect="true"></forward>
+  		<forward name="MaterightJsp" path="/zc13/bkmis/equipment/type/setType.jsp"></forward>
+  	</action>
+  	
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+
+</struts-config>
+

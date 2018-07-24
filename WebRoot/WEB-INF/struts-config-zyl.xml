@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  		<form-bean name="personnelForm" dynamic="true" type="com.zc13.bkmis.form.PersonnelForm"></form-bean>
+ 		<form-bean name="exteriorForm" dynamic="true" type="com.zc13.bkmis.form.ExteriorPerForm"></form-bean>
+ 		<form-bean name="typeForm" dynamic="true" type="com.zc13.bkmis.form.TypeForm"></form-bean>
+ 		<form-bean name="materialsForm" dynamic="true" type="com.zc13.bkmis.form.SetMaterialsForm"></form-bean>
+ 		<form-bean name="outputForm" dynamic="true" type="com.zc13.bkmis.form.OutputDepotManageForm"></form-bean>
+ 		<form-bean name="inputForm" dynamic="true" type="com.zc13.bkmis.form.InputDepotManageForm"></form-bean>
+ 		<form-bean name="supplierForm" dynamic="true" type="com.zc13.bkmis.form.DepotSupplierForm"></form-bean>
+  		<form-bean name="accountForm" dynamic="true" type="com.zc13.bkmis.form.AccountDepotForm"></form-bean>
+  		<form-bean name="analysisCusForm" dynamic="true" type="com.zc13.bkmis.form.AnalysisCustomerForm"></form-bean>
+  		<form-bean name="analysisChaForm" dynamic="true" type="com.zc13.bkmis.form.AnalysisChargesForm"></form-bean>
+ 		<form-bean name="analysisEngForm" dynamic="true" type="com.zc13.bkmis.form.AnalysisEnergyForm"></form-bean>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings>
+  	
+	<action path="/personnel" name="personnelForm" parameter="method" scope= "request" type="com.zc13.bkmis.action.PersonnelAction">
+  		<forward name="showPersonnel" path="/zc13/bkmis/personnel/personnel.jsp" ></forward>
+  		<forward name="addPersonnel" path="/zc13/bkmis/personnel/addPersonnel.jsp"></forward>
+  		<forward name="upload" path="/zc13/bkmis/personnel/upload.jsp"></forward>
+  		<forward name="edit" path="/zc13/bkmis/personnel/modifyPersonnel.jsp"></forward>
+  		<forward name="viewDetail" path="/zc13/bkmis/personnel/viewPersonDetail.jsp"></forward>
+  		<forward name="showDispatchPersonnelDialog" path="/zc13/bkmis/personnel/showDispatchPersonnelDialog.jsp"></forward>
+  		<forward name="showDispatchPersonnel" path="/zc13/bkmis/personnel/showDispatchPersonnel.jsp"></forward>
+  		<forward name="viewWorkingConditionsDetail" path="/zc13/bkmis/personnel/viewWorkingConditionsDetail4Person.jsp"></forward>
+  	</action>
+  	<action path="/upload"
+  		    parameter="method"
+  		    type="com.zc13.bkmis.action.PersonnelUploadAction"
+  	>
+  		<forward name="error" path="/zc13/bkmis/personnel/downloadError.jsp"></forward>
+  	</action>
+  	
+  	<!-- 外部人员信息模块的配置 -->
+  	<action path="/exterior"
+  		    name="exteriorForm"
+  		    parameter="method"
+  		    scope= "request"
+  		    type="com.zc13.bkmis.action.ExteriorPersonnel"
+  	>
+  		<forward name="showExteriorPer" path="/zc13/bkmis/exterior_personnel/exteriorpersonnel.jsp"></forward>
+  		<forward name="addExteriorPer" path="/zc13/bkmis/exterior_personnel/addexteriorper.jsp"></forward>
+  		<forward name="editPer" path="/zc13/bkmis/exterior_personnel/editexteriorper.jsp"></forward>
+  		<forward name="viewDetail" path="/zc13/bkmis/exterior_personnel/viewExteriorperDetail.jsp"></forward>
+  	</action>
+  	
+  	<!-- 仓库管理配置 -->
+  	<action path="/depot"
+  			name="typeForm"
+  			parameter="method"
+  			scope="request"
+  			type="com.zc13.bkmis.action.DepotAction"
+  	>
+  		<forward name="typeList" path="/treeFram.jsp" redirect="true"></forward>
+  		<forward name="MaterightJsp" path="/zc13/bkmis/depotManage/setType.jsp"></forward>
+  		<forward name="addSecond" path="/zc13/bkmis/depotManage/addSecondType.jsp"></forward>
+  		<forward name="jumpPage" path="/zc13/bkmis/depotManage/jump.jsp"></forward>
+  	</action>
+  	<!-- 入库管理模块 -->
+  		<action path="/inputdepot"
+  				name="materialsForm"
+  				parameter="method"
+  				scope="request"
+  				type="com.zc13.bkmis.action.InputDepotManageAction"
+  		>
+			<forward name="chooseMaterials" path="/treeFram.jsp" redirect="true"></forward>	
+			<forward name="mainFramJsp" path="/zc13/bkmis/depotManage/inputChooseMaterials.jsp"></forward>
+			<forward name="showChoose" path="/zc13/bkmis/depotManage/showInputChoose.jsp"></forward>	
+  		</action>
+  		<action path="/inputmanage"
+  				name="inputForm"
+  				parameter="method"
+  				scope="request"
+  				type="com.zc13.bkmis.action.InputDepotManage2Action"
+  		>
+  			<forward name="showInput" path="/zc13/bkmis/depotManage/inputManageList.jsp"></forward>
+  			<forward name="addInput" path="/zc13/bkmis/depotManage/addInputMaterials.jsp"></forward>
+  			<forward name="editInput" path="/zc13/bkmis/depotManage/editInputMaterials.jsp"></forward>
+  			<forward name="inDetail" path="/zc13/bkmis/depotManage/inputDepotList.jsp"></forward>
+  			<forward name="showTreeAndDetailIutput" path="/treeFram.jsp"></forward>
+  			<forward name="viewInput" path="/zc13/bkmis/depotManage/viewInputDetail.jsp"></forward>
+  			<forward name="inputListPrint" path="/zc13/bkmis/depotManage/inputListPrint.jsp"></forward>
+  		</action>
+  	<!-- 出库管理模块 -->
+  		<action path="/outputdepot"
+  				parameter="method"
+  				name="materialsForm"
+  				scope="request"
+  				type="com.zc13.bkmis.action.OutputDepotManageAction"
+  		>
+  			<forward name="chooseOutMaterails" path="/treeFram.jsp" redirect="true"></forward>
+  			<forward name="mainFramJsp" path="/zc13/bkmis/depotManage/outputChooseMaterials.jsp"></forward>
+  			<forward name="addOutput" path="/zc13/bkmis/depotManage/addOutputMaterials.jsp"></forward>
+  			<forward name="showChoose" path="/zc13/bkmis/depotManage/showOutputChoose.jsp"></forward>
+  			<forward name="outputManage" path="/zc13/bkmis/depotManage/outputManageList.jsp"></forward>  			
+  		</action>
+  		<action path="/outputmanage"
+  			    parameter="method"
+  			    name="outputForm"
+  			    scope="request"
+  			    type="com.zc13.bkmis.action.OutputDepotManage2Action"
+  		>
+			<forward name="editOutput" path="/zc13/bkmis/depotManage/editOutputMaterials.jsp"></forward>
+			<forward name="outDetail" path="/zc13/bkmis/depotManage/outputDepotList.jsp"></forward>
+			<forward name="showTreeAndOutputDetail" path="/treeFram.jsp"></forward>
+			<forward name="viewOutput" path="/zc13/bkmis/depotManage/viewOutputDetail.jsp"></forward>
+			<forward name="outputListPrint" path="/zc13/bkmis/depotManage/outputListPrint.jsp"></forward>
+  		</action>
+  	<!-- 现有库存 -->
+  		<action path="/existdepot"
+  				name="materialsForm"
+  				parameter="method"
+  				scope="request"
+  				type="com.zc13.bkmis.action.ExistDepotManageAction"
+  		>
+  			<forward name="existMaterials" path="/treeFram.jsp" redirect="true"></forward>
+  			<forward name="mainFramJsp" path="/zc13/bkmis/depotManage/existMaterials.jsp"></forward>
+  		</action>
+  	<!-- 材料设置模块 -->
+  		<action path="/setmaterials"
+  				name="materialsForm"
+  				parameter="method"
+  				scope="request"
+  				type="com.zc13.bkmis.action.SetMaterialsManageAction"
+  		>
+  			<forward name="MaterialsList" path="/treeFram.jsp" redirect="true"></forward>
+  			<forward name="mainFramJsp" path="/zc13/bkmis/depotManage/setMaterialsList.jsp"></forward>
+  			<forward name="add" path="/zc13/bkmis/depotManage/addMaterials.jsp"></forward>
+  			<forward name="edit" path="/zc13/bkmis/depotManage/editMaterials.jsp"></forward>
+  			<forward name="detailMaterial" path="/zc13/bkmis/depotManage/materialDetail.jsp"></forward>
+  		</action>
+  	<!-- 供应商管理模块 -->
+  		<action path="/supplier"
+  				name="supplierForm"
+  				parameter="method"
+  				scope="request"
+  				type="com.zc13.bkmis.action.DepotSupplierAction"
+  		>
+  			<forward name="showSupplier" path="/zc13/bkmis/depotManage/depotSupplierList.jsp"></forward>
+  			<forward name="addSupplier" path="/zc13/bkmis/depotManage/addDepotSupplier.jsp"></forward>
+  			<forward name="edidSupplier" path="/zc13/bkmis/depotManage/editDepotSupplier.jsp"></forward>
+  		</action>
+  		<!-- 库存核算管理模块 -->	
+  			<action path="/accountDepot"
+  					name="accountForm"
+  					parameter="method"
+  					scope="request"
+  					type="com.zc13.bkmis.action.AccountDepotAction"
+  			>
+  				<forward name="showAccount" path="/zc13/bkmis/depotManage/inventoryAccountList.jsp"></forward>
+  				<forward name="addAccount" path="/zc13/bkmis/depotManage/addInventoryAccount.jsp"></forward>
+  				<forward name="detailAccount" path="/zc13/bkmis/depotManage/detailAccount.jsp"></forward>
+  				<forward name="printAccountDetail" path="/zc13/bkmis/depotManage/accountDepotPrint.jsp"></forward>
+  			</action>
+  		<!-- 客户信息分析 -->
+  			<action path="/analysisCus"
+  					name="analysisCusForm"
+  					parameter="method"
+  					scope="request"
+  					type="com.zc13.bkmis.action.AnalysisCustomerAction"
+  			>
+  				<forward name="showAnalysis" path="/zc13/bkmis/informationAnalysis/CustomerAnalysis.jsp"></forward>
+  				<forward name="addAnalysis" path="/zc13/bkmis/informationAnalysis/addCustomerAnalysis.jsp"></forward>
+  				<forward name="seeGraphic" path="/zc13/bkmis/informationAnalysis/graphicsAnalysis.jsp"></forward>
+  				<forward name="detailGraphic" path="/zc13/bkmis/informationAnalysis/detailGraphicsAnalysis.jsp"></forward>
+  				<forward name="customerDetail" path="/zc13/bkmis/informationAnalysis/customerDetail.jsp"></forward>
+  			</action>
+  		<!-- 收费信息分析 -->
+  			<action path="/analysisCha"
+  					name="analysisChaForm"
+  					parameter="method"
+  					scope="request"
+  					type="com.zc13.bkmis.action.AnalysisChargesAction"
+  			>
+  				<forward name="showCharge" path="/zc13/bkmis/informationAnalysis/ChargesAnalysis.jsp"></forward>
+  				<forward name="addCharge" path="/zc13/bkmis/informationAnalysis/addChargesAnalysis.jsp"></forward>
+  				<forward name="selectAnalysis" path="/zc13/bkmis/informationAnalysis/graphicsChaAnalysis.jsp"></forward>
+  			</action>
+  		<!-- 能源信息分析 -->
+  			<action path="/analysisEng"
+  					name="analysisEngForm"
+  					parameter="method"
+  					scope="request"
+  					type="com.zc13.bkmis.action.AnalysisEnergyAction"
+  			>
+  				<forward name="showEnergy" path="/zc13/bkmis/informationAnalysis/EnergyAnalysis.jsp"></forward>
+  				<forward name="addEnergy" path="/zc13/bkmis/informationAnalysis/addEnergyAnalysis.jsp"></forward>
+  				<forward name="graphic" path="/zc13/bkmis/informationAnalysis/graphicsEngAnalysis.jsp"></forward>
+  			</action>
+  </action-mappings>
+  <message-resources parameter="com.zc13.struts.ApplicationResources" />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

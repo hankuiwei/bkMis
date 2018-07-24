@@ -1,0 +1,46 @@
+package $packageName;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.hibernate.SessionFactory;
+/**
+the parameter of the "$expression" in method named "getResult()" which can instanded of the following codes such as 1 or 2 or other codes.
+1.use jdbc
+String result = "";
+try {
+  java.util.Map map = jdbcTemplate
+    .queryForMap("select use_area from e_rooms where room_id={roomId}");
+  java.util.Set set = map.keySet();
+  java.util.Iterator it = set.iterator();
+  while (it.hasNext()) {
+    result = String.valueOf(map.get(it.next()));
+  }
+} catch (Exception e) {
+  e.printStackTrace();
+  throw new Exception();
+}
+return result;
+2.use hibernate
+String result="";
+java.util.List<com.zc13.bkmis.mapping.ERooms> list = this.getSession()
+  .createQuery("from ERooms where roomId={roomId}").list();
+if(list!=null&&list.size()>0){
+  result = String.valueOf(list.get(0).getUseArea());
+}
+return result;
+*/
+
+public class $className extends HibernateDaoSupport implements com.zc13.util.complier.template.Function {
+	private JdbcTemplate jdbcTemplate;
+	public $className(){
+		ApplicationContext ac = new ClassPathXmlApplicationContext("com/zc13/bkmis/client/applicationContext.xml");
+		//super.setSessionFactory((SessionFactory)ac.getBean("sessionFactory"));
+		jdbcTemplate = (JdbcTemplate)ac.getBean("jdbcTemplate");
+	}
+	@Override
+	public String getResult() throws Exception{
+		$expression
+	}
+}
+

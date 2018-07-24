@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/calculate.do" location="0,0" dimension="268,84" />
+  <StrutsActivity path="/zc13/bkmis/calculateMoney/yearCalculateMoneyList.jsp" location="650,150" dimension="358,48" />
+  <StrutsActivity path="/zc13/bkmis/calculateMoney/monthCalculateDetailList.jsp" location="50,250" dimension="370,48" />
+  <StrutsActivity path="/zc13/bkmis/calculateMoney/monthCalculateMoneyList.jsp" location="650,250" dimension="364,48" />
+  <StrutsActivity path="" location="350,50" dimension="40,48" />
+  <StrutsActivity path="/zc13/bkmis/repairResult/repairsResultList.jsp" location="650,50" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/calculateMoney/repairsResultList.jsp" location="50,150" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/calculateMoney/compactBillList.jsp" location="50,350" dimension="316,48" />
+  <StrutsTransition id="/calculate.do,monthList,/zc13/bkmis/calculateMoney/monthCalculateMoneyList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="134,42" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calculate.do,compactBillList,/zc13/bkmis/calculateMoney/compactBillList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="134,42" />
+      <AbsolutePoint location="208,374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calculate.do,monthDetialList,/zc13/bkmis/calculateMoney/compactBillList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="35,84" />
+      <AbsolutePoint location="35,374" />
+      <AbsolutePoint location="50,374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calculate.do,monthDetialList,/zc13/bkmis/calculateMoney/monthCalculateDetailList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="35,84" />
+      <AbsolutePoint location="35,274" />
+      <AbsolutePoint location="50,274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calculate.do,yearList,/zc13/bkmis/calculateMoney/yearCalculateMoneyList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="268,35" />
+      <AbsolutePoint location="981,35" />
+      <AbsolutePoint location="981,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

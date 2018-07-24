@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.zc13.bkmis.mapping.CalculateMoney" table="calculate_money" schema="dbo" catalog="bkMis" lazy="false">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="year" type="string">
+            <column name="year" length="10" />
+        </property>
+        <property name="month" type="string">
+            <column name="month" length="10" />
+        </property>
+        <property name="roomId" type="integer">
+            <column name="room_id" />
+        </property>
+        <property name="compactId" type="integer">
+            <column name="compact_id" />
+        </property>
+        <property name="clientId" type="integer">
+            <column name="client_id" />
+        </property>
+        <property name="circleStart" type="string">
+            <column name="circle_start" length="20" />
+        </property>
+        <property name="circleEnd" type="string">
+            <column name="circle_end" length="20" />
+        </property>
+        <property name="billDate" type="string">
+            <column name="bill_date" length="20" />
+        </property>
+        <property name="money" type="double">
+            <column name="money" precision="9" scale="3" />
+        </property>
+        <property name="startTime" type="string">
+            <column name="start_time" length="20" />
+        </property>
+        <property name="endTime" type="string">
+            <column name="end_time" length="20" />
+        </property>
+        <property name="lpId" type="integer">
+            <column name="lp_id" />
+        </property>
+    </class>
+</hibernate-mapping>

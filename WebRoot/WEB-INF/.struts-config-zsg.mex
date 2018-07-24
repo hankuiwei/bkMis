@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/items.do" location="39,874" dimension="250,84" />
+  <StrutsActivity path="/account.do" location="1447,597" dimension="310,84" />
+  <StrutsActivity path="/standard.do" location="172,30" dimension="292,84" />
+  <StrutsActivity path="/choice.do" location="1167,30" dimension="256,84" />
+  <StrutsActivity path="/bill.do" location="4906,30" dimension="244,84" />
+  <StrutsActivity path="/notice.do" location="568,597" dimension="256,84" />
+  <StrutsActivity path="/zc13/bkmis/costManage/baseSet/ChargingItems.jsp" location="0,1058" dimension="328,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/baseSet/AccInformation.jsp" location="1435,781" dimension="334,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/baseSet/chargingStandard.jsp" location="0,504" dimension="346,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/person_pop.jsp" location="446,504" dimension="262,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_choice.jsp" location="808,504" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_bill_input.jsp" location="1158,504" dimension="274,48" />
+  <StrutsActivity path="/treeFram.jsp" location="1912,504" dimension="118,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_bill_input2.jsp" location="1532,504" dimension="280,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/sj_print.jsp" location="2130,504" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_accountPrint.jsp" location="2480,504" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/return_deposit.jsp" location="2866,504" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_deposit.jsp" location="3252,504" dimension="256,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_electricity.jsp" location="3608,504" dimension="280,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_accounts.jsp" location="3988,504" dimension="262,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_charge.jsp" location="4350,504" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_count_print.jsp" location="4700,504" dimension="280,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_client_pop.jsp" location="5080,504" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_refund.jsp" location="5454,504" dimension="250,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_countBills.jsp" location="5804,504" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/sj_print2.jsp" location="6178,504" dimension="256,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_drawback.jsp" location="6534,504" dimension="262,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_countCharge.jsp" location="6896,504" dimension="280,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_collect_print.jsp" location="7276,504" dimension="292,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_collect_client.jsp" location="7668,504" dimension="298,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_collection.jsp" location="8066,504" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/c_detailBill4Charge.jsp" location="8440,504" dimension="316,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/uncalledNotice.jsp" location="0,781" dimension="286,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/addNotice.jsp" location="386,781" dimension="256,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/noticeDetail.jsp" location="742,781" dimension="274,48" />
+  <StrutsActivity path="/zc13/bkmis/costManage/notice_print.jsp" location="1116,781" dimension="274,48" />
+  <StrutsTransition id="/choice.do,input,/zc13/bkmis/costManage/c_bill_input.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1295,114" />
+      <AbsolutePoint location="1295,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/notice.do,list,/zc13/bkmis/costManage/uncalledNotice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="600,681" />
+      <AbsolutePoint location="600,716" />
+      <AbsolutePoint location="143,716" />
+      <AbsolutePoint location="143,781" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,printCharge,/zc13/bkmis/costManage/c_count_print.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5022,114" />
+      <AbsolutePoint location="5022,474" />
+      <AbsolutePoint location="4840,474" />
+      <AbsolutePoint location="4840,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,chargeBill,/zc13/bkmis/costManage/c_detailBill4Charge.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5144,114" />
+      <AbsolutePoint location="5144,144" />
+      <AbsolutePoint location="8598,144" />
+      <AbsolutePoint location="8598,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/choice.do,list,/zc13/bkmis/costManage/c_choice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1243,114" />
+      <AbsolutePoint location="1243,174" />
+      <AbsolutePoint location="933,174" />
+      <AbsolutePoint location="933,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,electricity,/zc13/bkmis/costManage/c_electricity.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4985,114" />
+      <AbsolutePoint location="4985,384" />
+      <AbsolutePoint location="3748,384" />
+      <AbsolutePoint location="3748,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,collectClient,/zc13/bkmis/costManage/c_collect_client.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5120,114" />
+      <AbsolutePoint location="5120,204" />
+      <AbsolutePoint location="7817,204" />
+      <AbsolutePoint location="7817,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,person,/zc13/bkmis/costManage/person_pop.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4912,114" />
+      <AbsolutePoint location="4912,204" />
+      <AbsolutePoint location="664,204" />
+      <AbsolutePoint location="664,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/notice.do,add,/zc13/bkmis/costManage/addNotice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="664,681" />
+      <AbsolutePoint location="664,746" />
+      <AbsolutePoint location="514,746" />
+      <AbsolutePoint location="514,781" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,countBills,/zc13/bkmis/costManage/c_countBills.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5059,114" />
+      <AbsolutePoint location="5059,354" />
+      <AbsolutePoint location="5941,354" />
+      <AbsolutePoint location="5941,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/standard.do,person,/zc13/bkmis/costManage/person_pop.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,114" />
+      <AbsolutePoint location="391,144" />
+      <AbsolutePoint location="489,144" />
+      <AbsolutePoint location="489,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,deposit,/zc13/bkmis/costManage/c_deposit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4973,114" />
+      <AbsolutePoint location="4973,354" />
+      <AbsolutePoint location="3380,354" />
+      <AbsolutePoint location="3380,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,returnDeposit,/zc13/bkmis/costManage/return_deposit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4961,114" />
+      <AbsolutePoint location="4961,324" />
+      <AbsolutePoint location="3009,324" />
+      <AbsolutePoint location="3009,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/choice.do,input2,/zc13/bkmis/costManage/c_bill_input2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1346,114" />
+      <AbsolutePoint location="1346,174" />
+      <AbsolutePoint location="1672,174" />
+      <AbsolutePoint location="1672,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/items.do,itemsList,/zc13/bkmis/costManage/baseSet/ChargingItems.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="164,958" />
+      <AbsolutePoint location="164,1058" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,refund,/zc13/bkmis/costManage/c_drawback.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5083,114" />
+      <AbsolutePoint location="5083,294" />
+      <AbsolutePoint location="6665,294" />
+      <AbsolutePoint location="6665,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,editbill,/bill.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5028,30" />
+      <AbsolutePoint location="5028,0" />
+      <AbsolutePoint location="4876,0" />
+      <AbsolutePoint location="4876,72" />
+      <AbsolutePoint location="4906,72" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/notice.do,detail,/zc13/bkmis/costManage/noticeDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="728,681" />
+      <AbsolutePoint location="728,746" />
+      <AbsolutePoint location="879,746" />
+      <AbsolutePoint location="879,781" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,accountPrint,/zc13/bkmis/costManage/c_accountPrint.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4949,114" />
+      <AbsolutePoint location="4949,294" />
+      <AbsolutePoint location="2623,294" />
+      <AbsolutePoint location="2623,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,countCharge,/zc13/bkmis/costManage/c_countCharge.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5095,114" />
+      <AbsolutePoint location="5095,264" />
+      <AbsolutePoint location="7036,264" />
+      <AbsolutePoint location="7036,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/choice.do,tree,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,114" />
+      <AbsolutePoint location="1397,144" />
+      <AbsolutePoint location="1941,144" />
+      <AbsolutePoint location="1941,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/choice.do,person,/zc13/bkmis/costManage/person_pop.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1192,114" />
+      <AbsolutePoint location="1192,144" />
+      <AbsolutePoint location="577,144" />
+      <AbsolutePoint location="577,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,print,/zc13/bkmis/costManage/c_collect_print.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5107,114" />
+      <AbsolutePoint location="5107,234" />
+      <AbsolutePoint location="7422,234" />
+      <AbsolutePoint location="7422,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,printSj,/zc13/bkmis/costManage/sj_print.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4937,114" />
+      <AbsolutePoint location="4937,264" />
+      <AbsolutePoint location="2255,264" />
+      <AbsolutePoint location="2255,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,account,/zc13/bkmis/costManage/c_accounts.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4998,114" />
+      <AbsolutePoint location="4998,414" />
+      <AbsolutePoint location="4119,414" />
+      <AbsolutePoint location="4119,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,refundBill,/zc13/bkmis/costManage/c_refund.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5046,114" />
+      <AbsolutePoint location="5046,384" />
+      <AbsolutePoint location="5579,384" />
+      <AbsolutePoint location="5579,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,printSj2,/zc13/bkmis/costManage/sj_print2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5071,114" />
+      <AbsolutePoint location="5071,324" />
+      <AbsolutePoint location="6306,324" />
+      <AbsolutePoint location="6306,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/notice.do,print,/zc13/bkmis/costManage/notice_print.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="792,681" />
+      <AbsolutePoint location="792,716" />
+      <AbsolutePoint location="1253,716" />
+      <AbsolutePoint location="1253,781" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,collection,/zc13/bkmis/costManage/c_collection.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5132,114" />
+      <AbsolutePoint location="5132,174" />
+      <AbsolutePoint location="8203,174" />
+      <AbsolutePoint location="8203,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,nowCharge,/zc13/bkmis/costManage/c_charge.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5010,114" />
+      <AbsolutePoint location="5010,444" />
+      <AbsolutePoint location="4475,444" />
+      <AbsolutePoint location="4475,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,client,/zc13/bkmis/costManage/c_client_pop.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5034,114" />
+      <AbsolutePoint location="5034,414" />
+      <AbsolutePoint location="5217,414" />
+      <AbsolutePoint location="5217,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/account.do,list,/zc13/bkmis/costManage/baseSet/AccInformation.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1602,681" />
+      <AbsolutePoint location="1602,781" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/standard.do,list,/zc13/bkmis/costManage/baseSet/chargingStandard.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="245,114" />
+      <AbsolutePoint location="245,144" />
+      <AbsolutePoint location="173,144" />
+      <AbsolutePoint location="173,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bill.do,tree,/treeFram.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4924,114" />
+      <AbsolutePoint location="4924,234" />
+      <AbsolutePoint location="2000,234" />
+      <AbsolutePoint location="2000,504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
